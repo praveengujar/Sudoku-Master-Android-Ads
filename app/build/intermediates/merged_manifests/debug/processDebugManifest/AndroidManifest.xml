@@ -43,7 +43,6 @@
         android:networkSecurityConfig="@xml/network_security_config"
         android:roundIcon="@drawable/ic_launcher_legacy"
         android:supportsRtl="true"
-        android:testOnly="true"
         android:theme="@style/Theme.SudokuMaster" >
 
         <!-- Main Activity -->

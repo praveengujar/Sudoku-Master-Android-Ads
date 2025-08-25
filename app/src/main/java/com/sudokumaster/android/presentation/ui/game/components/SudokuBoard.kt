@@ -1,14 +1,20 @@
 package com.sudokumaster.android.presentation.ui.game.components
 
+import androidx.compose.animation.*
+import androidx.compose.animation.core.*
 import androidx.compose.foundation.*
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.*
-import androidx.compose.runtime.Composable
+import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.graphicsLayer
+import androidx.compose.ui.hapticfeedback.HapticFeedbackType
+import androidx.compose.ui.platform.LocalHapticFeedback
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
@@ -26,16 +32,78 @@ fun SudokuBoard(
     onCellClick: (Int, Int) -> Unit,
     modifier: Modifier = Modifier
 ) {
-    Card(
-        modifier = modifier,
-        elevation = CardDefaults.cardElevation(defaultElevation = 4.dp)
+    ElevatedCard(
+        modifier = modifier
+            .shadow(
+                elevation = 12.dp,
+                shape = RoundedCornerShape(24.dp),
+                ambientColor = MaterialTheme.colorScheme.primary.copy(alpha = 0.1f)
+            ),
+        elevation = CardDefaults.elevatedCardElevation(defaultElevation = 12.dp),
+        shape = RoundedCornerShape(24.dp),
+        colors = CardDefaults.elevatedCardColors(
+            containerColor = MaterialTheme.colorScheme.surfaceContainerHighest
+        )
     ) {
         Column(
-            modifier = Modifier.padding(8.dp)
+            modifier = Modifier.padding(16.dp),
+            verticalArrangement = Arrangement.spacedBy(2.dp)
         ) {
-            repeat(9) { row ->
-                Row {
-                    repeat(9) { col ->
+            // Create 3x3 grid of boxes for visual separation
+            repeat(3) { boxRow ->
+                Row(
+                    horizontalArrangement = Arrangement.spacedBy(6.dp)
+                ) {
+                    repeat(3) { boxCol ->
+                        SudokuBox(
+                            boxRow = boxRow,
+                            boxCol = boxCol,
+                            grid = grid,
+                            originalGrid = originalGrid,
+                            selectedCell = selectedCell,
+                            errors = errors,
+                            hintCell = hintCell,
+                            onCellClick = onCellClick,
+                            modifier = Modifier.weight(1f)
+                        )
+                    }
+                }
+            }
+        }
+    }
+}
+
+@Composable
+private fun SudokuBox(
+    boxRow: Int,
+    boxCol: Int,
+    grid: SudokuGrid,
+    originalGrid: SudokuGrid,
+    selectedCell: CellPosition?,
+    errors: Map<CellPosition, Boolean>,
+    hintCell: Triple<Int, Int, Int>?,
+    onCellClick: (Int, Int) -> Unit,
+    modifier: Modifier = Modifier
+) {
+    Card(
+        modifier = modifier,
+        shape = RoundedCornerShape(12.dp),
+        colors = CardDefaults.cardColors(
+            containerColor = MaterialTheme.colorScheme.surface.copy(alpha = 0.5f)
+        ),
+        border = BorderStroke(2.dp, MaterialTheme.colorScheme.outline.copy(alpha = 0.3f))
+    ) {
+        Column(
+            modifier = Modifier.padding(4.dp),
+            verticalArrangement = Arrangement.spacedBy(2.dp)
+        ) {
+            repeat(3) { innerRow ->
+                Row(
+                    horizontalArrangement = Arrangement.spacedBy(2.dp)
+                ) {
+                    repeat(3) { innerCol ->
+                        val row = boxRow * 3 + innerRow
+                        val col = boxCol * 3 + innerCol
                         val cellPosition = CellPosition(row, col)
                         val isSelected = selectedCell?.row == row && selectedCell?.col == col
                         val hasError = errors[cellPosition] == true
@@ -53,10 +121,6 @@ fun SudokuBoard(
                             modifier = Modifier
                                 .weight(1f)
                                 .aspectRatio(1f)
-                                .padding(
-                                    end = if (col == 2 || col == 5) 4.dp else 1.dp,
-                                    bottom = if (row == 2 || row == 5) 4.dp else 1.dp
-                                )
                         )
                     }
                 }
@@ -77,40 +141,79 @@ fun SudokuCell(
     onClick: () -> Unit,
     modifier: Modifier = Modifier
 ) {
-    val backgroundColor = when {
-        hasError -> MaterialTheme.colorScheme.errorContainer.copy(alpha = 0.3f)
-        isSelected -> MaterialTheme.colorScheme.primaryContainer.copy(alpha = 0.5f)
-        isHint -> MaterialTheme.colorScheme.tertiary.copy(alpha = 0.3f)
-        else -> MaterialTheme.colorScheme.surface
-    }
+    val haptic = LocalHapticFeedback.current
     
-    val textColor = when {
-        hasError -> MaterialTheme.colorScheme.error
-        isOriginal -> MaterialTheme.colorScheme.onSurface
-        isHint -> MaterialTheme.colorScheme.tertiary
-        else -> MaterialTheme.colorScheme.primary
-    }
+    // Animated properties
+    val backgroundColor by animateColorAsState(
+        targetValue = when {
+            hasError -> MaterialTheme.colorScheme.errorContainer.copy(alpha = 0.7f)
+            isSelected -> MaterialTheme.colorScheme.primaryContainer.copy(alpha = 0.8f)
+            isHint -> MaterialTheme.colorScheme.tertiaryContainer.copy(alpha = 0.7f)
+            else -> MaterialTheme.colorScheme.surfaceContainerHigh
+        },
+        animationSpec = tween(200),
+        label = "cell_background_color"
+    )
     
-    val borderColor = when {
-        isSelected -> MaterialTheme.colorScheme.primary
-        hasError -> MaterialTheme.colorScheme.error
-        else -> MaterialTheme.colorScheme.outline
-    }
+    val textColor by animateColorAsState(
+        targetValue = when {
+            hasError -> MaterialTheme.colorScheme.onErrorContainer
+            isOriginal -> MaterialTheme.colorScheme.onSurface
+            isHint -> MaterialTheme.colorScheme.onTertiaryContainer
+            isSelected -> MaterialTheme.colorScheme.onPrimaryContainer
+            else -> MaterialTheme.colorScheme.primary
+        },
+        animationSpec = tween(200),
+        label = "cell_text_color"
+    )
     
-    val borderWidth = if (isSelected) 2.dp else 1.dp
+    val borderColor by animateColorAsState(
+        targetValue = when {
+            isSelected -> MaterialTheme.colorScheme.primary
+            hasError -> MaterialTheme.colorScheme.error
+            else -> Color.Transparent
+        },
+        animationSpec = tween(200),
+        label = "cell_border_color"
+    )
+    
+    val elevation by animateDpAsState(
+        targetValue = if (isSelected) 8.dp else 2.dp,
+        animationSpec = tween(200),
+        label = "cell_elevation"
+    )
+    
+    val scale by animateFloatAsState(
+        targetValue = if (isSelected) 1.05f else 1f,
+        animationSpec = spring(
+            dampingRatio = Spring.DampingRatioMediumBouncy,
+            stiffness = Spring.StiffnessLow
+        ),
+        label = "cell_scale"
+    )
 
-    Card(
-        onClick = onClick,
+    ElevatedCard(
+        onClick = {
+            haptic.performHapticFeedback(HapticFeedbackType.LongPress)
+            onClick()
+        },
         modifier = modifier
+            .graphicsLayer {
+                scaleX = scale
+                scaleY = scale
+            }
             .border(
-                width = borderWidth,
+                width = if (isSelected || hasError) 2.dp else 0.dp,
                 color = borderColor,
-                shape = RoundedCornerShape(4.dp)
+                shape = RoundedCornerShape(8.dp)
             ),
-        colors = CardDefaults.cardColors(
+        colors = CardDefaults.elevatedCardColors(
             containerColor = backgroundColor
         ),
-        shape = RoundedCornerShape(4.dp)
+        elevation = CardDefaults.elevatedCardElevation(
+            defaultElevation = elevation
+        ),
+        shape = RoundedCornerShape(8.dp)
     ) {
         Box(
             modifier = Modifier.fillMaxSize(),
@@ -122,13 +225,19 @@ fun SudokuCell(
                 else -> ""
             }
             
-            Text(
-                text = displayValue,
-                fontSize = 20.sp,
-                fontWeight = if (isOriginal) FontWeight.Bold else FontWeight.Normal,
-                color = textColor,
-                textAlign = TextAlign.Center
-            )
+            if (displayValue.isNotEmpty()) {
+                Text(
+                    text = displayValue,
+                    fontSize = 16.sp,
+                    fontWeight = when {
+                        isOriginal -> FontWeight.Bold
+                        isHint -> FontWeight.Medium
+                        else -> FontWeight.SemiBold
+                    },
+                    color = textColor,
+                    textAlign = TextAlign.Center
+                )
+            }
         }
     }
 }
