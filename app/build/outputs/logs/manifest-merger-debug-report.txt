@@ -1,0 +1,588 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/pgujar/Documents/Projects/Sudoku-Master-Android-Ads/app/src/main/AndroidManifest.xml:2:1-57:12
+INJECTED from /Users/pgujar/Documents/Projects/Sudoku-Master-Android-Ads/app/src/main/AndroidManifest.xml:2:1-57:12
+INJECTED from /Users/pgujar/Documents/Projects/Sudoku-Master-Android-Ads/app/src/main/AndroidManifest.xml:2:1-57:12
+INJECTED from /Users/pgujar/Documents/Projects/Sudoku-Master-Android-Ads/app/src/main/AndroidManifest.xml:2:1-57:12
+MERGED from [androidx.biometric:biometric:1.2.0-alpha05] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/9115fe0d0d40a205573c2e41f2f22d6e/transformed/biometric-1.2.0-alpha05/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/a0aa2e0cd0998f2508cf5b4b02697f59/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media:media:1.0.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/9cce349d15bd73fcc379d51467c0dd58/transformed/media-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/e166ff55a1eaf0c0da0b14057bb26a96/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/7f1c43b054332b53e4d472379b0e74da/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.hilt:hilt-navigation-compose:1.2.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/170af2c43b6b5fcdd24938a96579744a/transformed/hilt-navigation-compose-1.2.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.hilt:hilt-navigation:1.2.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/3a601db355c2cd6ea30cfa8a71cc0586/transformed/hilt-navigation-1.2.0/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.dagger:hilt-android:2.51.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/4f9507c88b342756f542eb4770fbb5ca/transformed/hilt-android-2.51.1/AndroidManifest.xml:16:1-19:12
+MERGED from [androidx.navigation:navigation-common:2.7.7] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/db7c0cf1de40dd4d3e3f98671d346f75/transformed/navigation-common-2.7.7/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-runtime:2.7.7] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/afbb7a6846d07a9856410c104f351563/transformed/navigation-runtime-2.7.7/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-common-ktx:2.7.7] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/660f6c9357a8ffd559ad072224747161/transformed/navigation-common-ktx-2.7.7/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.7.7] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/dd976cce8df617b5a8ffb7ff1e904332/transformed/navigation-runtime-ktx-2.7.7/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.navigation:navigation-compose:2.7.7] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/e6ea4c4a840f4798554e84f5d0410ec2/transformed/navigation-compose-2.7.7/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.accompanist:accompanist-permissions:0.35.1-alpha] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/5ceaeb281061bf6ae674f73982af3bf4/transformed/accompanist-permissions-0.35.1-alpha/AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.compose.material3:material3-android:1.2.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/103e50c324eeb60042d10d4c1bf98535/transformed/material3-release/AndroidManifest.xml:17:1-22:12
+MERGED from [io.coil-kt:coil-compose:2.7.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/c1c65035dc95ecaa4b94281bc980a74e/transformed/coil-compose-2.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [io.coil-kt:coil-compose-base:2.7.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/11d2ad86ce108122c8de7a649cbf1bcc/transformed/coil-compose-base-2.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material:material-android:1.6.8] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/9dc0f1774599e9510ad7d22a2fc74d10/transformed/material-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material:material-icons-core-android:1.6.8] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/1e6bd389f393f9555cb920e9468d6f6a/transformed/material-icons-core-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material:material-icons-extended-android:1.6.8] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/28e3db1fbeb1074871ac63aac7b0e127/transformed/material-icons-extended-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material:material-ripple-android:1.6.8] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/49cff24b67a64552cae254eefc3e661e/transformed/material-ripple-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.animation:animation-core-android:1.7.0-alpha02] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/2982f584036c7c2064671ff2a964e74c/transformed/animation-core-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.animation:animation-android:1.7.0-alpha02] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/dca28ec88b0248cf24bf3c2caac1effe/transformed/animation-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.7.0-alpha02] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/ffe2a89d7724c7cac3ee0bd7c26aff1c/transformed/foundation-layout-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.foundation:foundation-android:1.7.0-alpha02] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/60ce13f1a1e543473a1191fc9ee9b337/transformed/foundation-release/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.accompanist:accompanist-drawablepainter:0.32.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/bb322f2a74c9728ecaf6a7b274194424/transformed/accompanist-drawablepainter-0.32.0/AndroidManifest.xml:17:1-23:12
+MERGED from [io.coil-kt:coil:2.7.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/648d41bd8af5de48e8f0227b121816ef/transformed/coil-2.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [io.coil-kt:coil-base:2.7.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/e6345d4b61f8a13729dc2d52a0dbf831/transformed/coil-base-2.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/f5175fbc8b28f0caba0dc409fe62d861/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.appcompat:appcompat:1.6.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/0017d4472723a6ce6849fe07df3ee299/transformed/appcompat-1.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.fragment:fragment:1.5.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/71536c784ec67f79c546e5c345a839ce/transformed/fragment-1.5.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/5b2ddbd49ddec58f4801e956309d7033/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.ui:ui-tooling-data-android:1.7.0-alpha02] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/01afee4c38b77e7253a40530eece19cd/transformed/ui-tooling-data-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.7.0-alpha02] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/7056832588ed7d14253381b7f3693ece/transformed/ui-tooling-preview-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.ui:ui-unit-android:1.7.0-alpha02] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/a619b487d2c6e71bc0e0d4674778d42e/transformed/ui-unit-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-graphics-android:1.7.0-alpha02] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/59772e12e39a578de6e59af2f7215285/transformed/ui-graphics-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-geometry-android:1.7.0-alpha02] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/871ffd9e0a7a66fb99b97d9e2fd968e5/transformed/ui-geometry-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-test-manifest:1.7.0-alpha02] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/2e8480e408ddf207584ffe670b947ee9/transformed/ui-test-manifest-1.7.0-alpha02/AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.compose.ui:ui-util-android:1.7.0-alpha02] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/74419f9a6d7d5c3cf81e2b8aed91bc28/transformed/ui-util-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-text-android:1.7.0-alpha02] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/bed581a6ea6604cf4a85dd69acfff0cd/transformed/ui-text-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/98cb1e3c4cddbaa1e876865b2b6fb478/transformed/emoji2-views-helper-1.3.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2:1.3.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/556f90501067d439114257281afaa1e9/transformed/emoji2-1.3.0/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.4] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/f74df07994dad8665d8a19d4308fd633/transformed/lifecycle-process-2.8.4/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.8.4] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/31da507199f6a41941b2282882bffc9f/transformed/lifecycle-livedata-core-ktx-2.8.4/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.8.4] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/250a5ae4f8012a0d4febd5b11bdd49a2/transformed/lifecycle-livedata-2.8.4/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.8.4] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/ea01b939d011936e7fd891dad535a9e1/transformed/lifecycle-viewmodel-2.8.4/AndroidManifest.xml:2:1-5:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.8.4] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/d841c24bb27ac5a89456419102d9f6d5/transformed/lifecycle-viewmodel-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/448f9d025c37e88e4bac746898238147/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.2.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/92a9e66b14670f25fbc6421e0d682325/transformed/savedstate-1.2.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.8.4] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/7e105088618d24a0e384a340b92d6839/transformed/lifecycle-runtime-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.4] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/c0eb22bda61bfd1658b7bf1cfb743ede/transformed/lifecycle-viewmodel-ktx-2.8.4/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.8.4] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/7b0741b6880b19ce085d8fe4f7db0353/transformed/lifecycle-viewmodel-savedstate-2.8.4/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.8.4] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/484dfee0853dc56f50619b83171fa839/transformed/lifecycle-livedata-core-2.8.4/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-compose-android:2.8.4] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/929c42dfaef982c20b76e6cf3fb81feb/transformed/lifecycle-runtime-compose-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.8.4] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/99fcfdc80fff8ea76c7a3028ae55136f/transformed/lifecycle-runtime-ktx-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose-android:2.8.4] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/ca4d1cf57b5f9456afcdf82e93e4c667/transformed/lifecycle-viewmodel-compose-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-android:1.7.0-alpha02] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/b7e54c814e9695c0a2e7dc41844908d8/transformed/ui-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-tooling-android:1.7.0-alpha02] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/d54d5d396fc5aaa19f2fef70247ffb7e/transformed/ui-tooling-release/AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.activity:activity-compose:1.9.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/9e1202b49d0c81d70ae6eadae53504de/transformed/activity-compose-1.9.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.activity:activity-ktx:1.9.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/972758661d00b148c95e72528db9a7eb/transformed/activity-ktx-1.9.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.activity:activity:1.9.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/70dc9006848004d7849d128ee4f2fdf3/transformed/activity-1.9.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/cae95f0bd9efd147867b567a28026b1d/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/ed1b87da4a88151be136cc0d4f89d81a/transformed/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/80f87e30a109b8769ad9557da951ffbc/transformed/coordinatorlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/ace95ab78e5dfde3488f7f187cf9c612/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/53b8606276a3442823fb113ff2686ba4/transformed/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/af791d65fc147eccfa17ac071282ebad/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/29acb7a35ffb797dce4bdb6d25a0f719/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/507ed53e597ed3c12497da0acfc96452/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/f4ddb131c51b272c59a8fe5aa5034a1c/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.autofill:autofill:1.0.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/4855036ca36bd3801fadbcf6f117bf7d/transformed/autofill-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.graphics:graphics-path:1.0.0-beta02] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/d761e0ce7625408ce68194736eb51849/transformed/graphics-path-1.0.0-beta02/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.core:core:1.13.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/3b7ba18dcd45d8a448d2d8cc6fd7166b/transformed/core-1.13.1/AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/c274f08a18c6b36cb7c5a0907eb92028/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.core:core-ktx:1.13.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/766216044f1a7330a41a1a676d896c29/transformed/core-ktx-1.13.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.room:room-runtime:2.6.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/c8f0e094151c02ac847fbd14635e3837/transformed/room-runtime-2.6.1/AndroidManifest.xml:17:1-31:12
+MERGED from [androidx.room:room-ktx:2.6.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/38aeba6d1837bf0c437c4c2d76711457/transformed/room-ktx-2.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.datastore:datastore-core-android:1.1.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/3a3f7252d56137778c38e147365d877b/transformed/datastore-core-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.datastore:datastore-android:1.1.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/3aa81be33c2a74fcd81cdf589003dcbb/transformed/datastore-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.datastore:datastore-preferences-android:1.1.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/22ba2e2119894175e8f60fbb23397813/transformed/datastore-preferences-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.7.0-alpha02] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/f4ed5fe4b9a3437ba673a385e0dd74ca/transformed/runtime-saveable-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.runtime:runtime-android:1.7.0-alpha02] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/fc7ebaa97a2e8afca8eb5378bfb272e7/transformed/runtime-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.sqlite:sqlite-framework:2.4.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/03c64cdccb2d392af775ea721977f8e5/transformed/sqlite-framework-2.4.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.sqlite:sqlite:2.4.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/1c1b4b1a96241f1057f5527ef42bcf2b/transformed/sqlite-2.4.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.4.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/7ae650fcfa90ed775fecf4c3a06bd48f/transformed/annotation-experimental-1.4.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/f5333c6f6ab86a7b89b8eb1ec2901b1e/transformed/core-runtime-2.2.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/37c454b4aa4e332e6b262e877a9e2a87/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/35de2812a08cb77f7233c6d5b95d9aa4/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/7a5c4acb600df186a48810fa12050a1c/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/b8cedb042432e3e5ef08bf5bcb9e3e63/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/86ac727616b51805a22f6400a1e03dd8/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/23a38fcdb3fb189e0ef504ac33cd80d1/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/372cad6539f52033f0e470b5a84a4882/transformed/profileinstaller-1.3.1/AndroidManifest.xml:17:1-55:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/8534908d75987492a302cb1ba5fdc27d/transformed/startup-runtime-1.1.1/AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/a17118e88f060a9ce63905182c0331a0/transformed/tracing-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.exifinterface:exifinterface:1.3.7] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/c414a68123bee3ce57422e0c2aed1f79/transformed/exifinterface-1.3.7/AndroidManifest.xml:17:1-24:12
+MERGED from [com.facebook.android:audience-network-sdk:6.18.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/726d07880292ca9f8178421d9276d879/transformed/audience-network-sdk-6.18.0/AndroidManifest.xml:2:1-32:12
+MERGED from [com.google.dagger:dagger-lint-aar:2.51.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/bd1d2de2b9615b743269ca91c1fc98c8/transformed/dagger-lint-aar-2.51.1/AndroidManifest.xml:16:1-19:12
+MERGED from [com.google.android.gms:play-services-basement:11.0.4] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/66b7ba456253e755919db7fccb42b831/transformed/play-services-basement-11.0.4/AndroidManifest.xml:16:1-23:12
+	package
+		INJECTED from /Users/pgujar/Documents/Projects/Sudoku-Master-Android-Ads/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/pgujar/Documents/Projects/Sudoku-Master-Android-Ads/app/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /Users/pgujar/Documents/Projects/Sudoku-Master-Android-Ads/app/src/main/AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from /Users/pgujar/Documents/Projects/Sudoku-Master-Android-Ads/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/pgujar/Documents/Projects/Sudoku-Master-Android-Ads/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/pgujar/Documents/Projects/Sudoku-Master-Android-Ads/app/src/main/AndroidManifest.xml:6:5-67
+MERGED from [com.facebook.android:audience-network-sdk:6.18.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/726d07880292ca9f8178421d9276d879/transformed/audience-network-sdk-6.18.0/AndroidManifest.xml:15:5-67
+MERGED from [com.facebook.android:audience-network-sdk:6.18.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/726d07880292ca9f8178421d9276d879/transformed/audience-network-sdk-6.18.0/AndroidManifest.xml:15:5-67
+	android:name
+		ADDED from /Users/pgujar/Documents/Projects/Sudoku-Master-Android-Ads/app/src/main/AndroidManifest.xml:6:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/pgujar/Documents/Projects/Sudoku-Master-Android-Ads/app/src/main/AndroidManifest.xml:7:5-79
+MERGED from [com.facebook.android:audience-network-sdk:6.18.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/726d07880292ca9f8178421d9276d879/transformed/audience-network-sdk-6.18.0/AndroidManifest.xml:16:5-79
+MERGED from [com.facebook.android:audience-network-sdk:6.18.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/726d07880292ca9f8178421d9276d879/transformed/audience-network-sdk-6.18.0/AndroidManifest.xml:16:5-79
+	android:name
+		ADDED from /Users/pgujar/Documents/Projects/Sudoku-Master-Android-Ads/app/src/main/AndroidManifest.xml:7:22-76
+uses-permission#android.permission.USE_BIOMETRIC
+ADDED from /Users/pgujar/Documents/Projects/Sudoku-Master-Android-Ads/app/src/main/AndroidManifest.xml:10:5-72
+MERGED from [androidx.biometric:biometric:1.2.0-alpha05] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/9115fe0d0d40a205573c2e41f2f22d6e/transformed/biometric-1.2.0-alpha05/AndroidManifest.xml:22:5-72
+MERGED from [androidx.biometric:biometric:1.2.0-alpha05] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/9115fe0d0d40a205573c2e41f2f22d6e/transformed/biometric-1.2.0-alpha05/AndroidManifest.xml:22:5-72
+	android:name
+		ADDED from /Users/pgujar/Documents/Projects/Sudoku-Master-Android-Ads/app/src/main/AndroidManifest.xml:10:22-69
+uses-permission#android.permission.USE_FINGERPRINT
+ADDED from /Users/pgujar/Documents/Projects/Sudoku-Master-Android-Ads/app/src/main/AndroidManifest.xml:11:5-74
+MERGED from [androidx.biometric:biometric:1.2.0-alpha05] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/9115fe0d0d40a205573c2e41f2f22d6e/transformed/biometric-1.2.0-alpha05/AndroidManifest.xml:25:5-74
+MERGED from [androidx.biometric:biometric:1.2.0-alpha05] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/9115fe0d0d40a205573c2e41f2f22d6e/transformed/biometric-1.2.0-alpha05/AndroidManifest.xml:25:5-74
+	android:name
+		ADDED from /Users/pgujar/Documents/Projects/Sudoku-Master-Android-Ads/app/src/main/AndroidManifest.xml:11:22-71
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from /Users/pgujar/Documents/Projects/Sudoku-Master-Android-Ads/app/src/main/AndroidManifest.xml:14:5-76
+	android:name
+		ADDED from /Users/pgujar/Documents/Projects/Sudoku-Master-Android-Ads/app/src/main/AndroidManifest.xml:14:22-73
+uses-permission#com.google.android.gms.permission.AD_ID
+ADDED from /Users/pgujar/Documents/Projects/Sudoku-Master-Android-Ads/app/src/main/AndroidManifest.xml:15:5-79
+MERGED from [com.facebook.android:audience-network-sdk:6.18.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/726d07880292ca9f8178421d9276d879/transformed/audience-network-sdk-6.18.0/AndroidManifest.xml:17:5-79
+MERGED from [com.facebook.android:audience-network-sdk:6.18.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/726d07880292ca9f8178421d9276d879/transformed/audience-network-sdk-6.18.0/AndroidManifest.xml:17:5-79
+	android:name
+		ADDED from /Users/pgujar/Documents/Projects/Sudoku-Master-Android-Ads/app/src/main/AndroidManifest.xml:15:22-76
+application
+ADDED from /Users/pgujar/Documents/Projects/Sudoku-Master-Android-Ads/app/src/main/AndroidManifest.xml:17:5-55:19
+INJECTED from /Users/pgujar/Documents/Projects/Sudoku-Master-Android-Ads/app/src/main/AndroidManifest.xml:17:5-55:19
+MERGED from [androidx.compose.ui:ui-test-manifest:1.7.0-alpha02] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/2e8480e408ddf207584ffe670b947ee9/transformed/ui-test-manifest-1.7.0-alpha02/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.compose.ui:ui-test-manifest:1.7.0-alpha02] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/2e8480e408ddf207584ffe670b947ee9/transformed/ui-test-manifest-1.7.0-alpha02/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.emoji2:emoji2:1.3.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/556f90501067d439114257281afaa1e9/transformed/emoji2-1.3.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.3.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/556f90501067d439114257281afaa1e9/transformed/emoji2-1.3.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.4] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/f74df07994dad8665d8a19d4308fd633/transformed/lifecycle-process-2.8.4/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.4] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/f74df07994dad8665d8a19d4308fd633/transformed/lifecycle-process-2.8.4/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.compose.ui:ui-tooling-android:1.7.0-alpha02] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/d54d5d396fc5aaa19f2fef70247ffb7e/transformed/ui-tooling-release/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.compose.ui:ui-tooling-android:1.7.0-alpha02] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/d54d5d396fc5aaa19f2fef70247ffb7e/transformed/ui-tooling-release/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.core:core:1.13.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/3b7ba18dcd45d8a448d2d8cc6fd7166b/transformed/core-1.13.1/AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.13.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/3b7ba18dcd45d8a448d2d8cc6fd7166b/transformed/core-1.13.1/AndroidManifest.xml:28:5-89
+MERGED from [androidx.room:room-runtime:2.6.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/c8f0e094151c02ac847fbd14635e3837/transformed/room-runtime-2.6.1/AndroidManifest.xml:23:5-29:19
+MERGED from [androidx.room:room-runtime:2.6.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/c8f0e094151c02ac847fbd14635e3837/transformed/room-runtime-2.6.1/AndroidManifest.xml:23:5-29:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/35de2812a08cb77f7233c6d5b95d9aa4/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/35de2812a08cb77f7233c6d5b95d9aa4/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/372cad6539f52033f0e470b5a84a4882/transformed/profileinstaller-1.3.1/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/372cad6539f52033f0e470b5a84a4882/transformed/profileinstaller-1.3.1/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/8534908d75987492a302cb1ba5fdc27d/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/8534908d75987492a302cb1ba5fdc27d/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [com.facebook.android:audience-network-sdk:6.18.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/726d07880292ca9f8178421d9276d879/transformed/audience-network-sdk-6.18.0/AndroidManifest.xml:19:5-30:19
+MERGED from [com.facebook.android:audience-network-sdk:6.18.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/726d07880292ca9f8178421d9276d879/transformed/audience-network-sdk-6.18.0/AndroidManifest.xml:19:5-30:19
+MERGED from [com.google.android.gms:play-services-basement:11.0.4] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/66b7ba456253e755919db7fccb42b831/transformed/play-services-basement-11.0.4/AndroidManifest.xml:19:5-21:19
+MERGED from [com.google.android.gms:play-services-basement:11.0.4] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/66b7ba456253e755919db7fccb42b831/transformed/play-services-basement-11.0.4/AndroidManifest.xml:19:5-21:19
+	android:extractNativeLibs
+		INJECTED from /Users/pgujar/Documents/Projects/Sudoku-Master-Android-Ads/app/src/main/AndroidManifest.xml
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.13.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/3b7ba18dcd45d8a448d2d8cc6fd7166b/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
+	android:supportsRtl
+		ADDED from /Users/pgujar/Documents/Projects/Sudoku-Master-Android-Ads/app/src/main/AndroidManifest.xml:25:9-35
+	android:label
+		ADDED from /Users/pgujar/Documents/Projects/Sudoku-Master-Android-Ads/app/src/main/AndroidManifest.xml:23:9-41
+	android:fullBackupContent
+		ADDED from /Users/pgujar/Documents/Projects/Sudoku-Master-Android-Ads/app/src/main/AndroidManifest.xml:21:9-54
+	android:roundIcon
+		ADDED from /Users/pgujar/Documents/Projects/Sudoku-Master-Android-Ads/app/src/main/AndroidManifest.xml:24:9-57
+	tools:targetApi
+		ADDED from /Users/pgujar/Documents/Projects/Sudoku-Master-Android-Ads/app/src/main/AndroidManifest.xml:28:9-29
+	android:icon
+		ADDED from /Users/pgujar/Documents/Projects/Sudoku-Master-Android-Ads/app/src/main/AndroidManifest.xml:22:9-52
+	android:allowBackup
+		ADDED from /Users/pgujar/Documents/Projects/Sudoku-Master-Android-Ads/app/src/main/AndroidManifest.xml:19:9-35
+	android:theme
+		ADDED from /Users/pgujar/Documents/Projects/Sudoku-Master-Android-Ads/app/src/main/AndroidManifest.xml:26:9-50
+	android:networkSecurityConfig
+		ADDED from /Users/pgujar/Documents/Projects/Sudoku-Master-Android-Ads/app/src/main/AndroidManifest.xml:27:9-69
+	android:dataExtractionRules
+		ADDED from /Users/pgujar/Documents/Projects/Sudoku-Master-Android-Ads/app/src/main/AndroidManifest.xml:20:9-65
+	android:name
+		ADDED from /Users/pgujar/Documents/Projects/Sudoku-Master-Android-Ads/app/src/main/AndroidManifest.xml:18:9-42
+activity#com.sudokumaster.android.presentation.MainActivity
+ADDED from /Users/pgujar/Documents/Projects/Sudoku-Master-Android-Ads/app/src/main/AndroidManifest.xml:31:9-41:20
+	android:screenOrientation
+		ADDED from /Users/pgujar/Documents/Projects/Sudoku-Master-Android-Ads/app/src/main/AndroidManifest.xml:36:13-49
+	android:label
+		ADDED from /Users/pgujar/Documents/Projects/Sudoku-Master-Android-Ads/app/src/main/AndroidManifest.xml:34:13-45
+	android:exported
+		ADDED from /Users/pgujar/Documents/Projects/Sudoku-Master-Android-Ads/app/src/main/AndroidManifest.xml:33:13-36
+	android:theme
+		ADDED from /Users/pgujar/Documents/Projects/Sudoku-Master-Android-Ads/app/src/main/AndroidManifest.xml:35:13-54
+	android:name
+		ADDED from /Users/pgujar/Documents/Projects/Sudoku-Master-Android-Ads/app/src/main/AndroidManifest.xml:32:13-54
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/pgujar/Documents/Projects/Sudoku-Master-Android-Ads/app/src/main/AndroidManifest.xml:37:13-40:29
+action#android.intent.action.MAIN
+ADDED from /Users/pgujar/Documents/Projects/Sudoku-Master-Android-Ads/app/src/main/AndroidManifest.xml:38:17-69
+	android:name
+		ADDED from /Users/pgujar/Documents/Projects/Sudoku-Master-Android-Ads/app/src/main/AndroidManifest.xml:38:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/pgujar/Documents/Projects/Sudoku-Master-Android-Ads/app/src/main/AndroidManifest.xml:39:17-77
+	android:name
+		ADDED from /Users/pgujar/Documents/Projects/Sudoku-Master-Android-Ads/app/src/main/AndroidManifest.xml:39:27-74
+meta-data#com.facebook.sdk.ApplicationId
+ADDED from /Users/pgujar/Documents/Projects/Sudoku-Master-Android-Ads/app/src/main/AndroidManifest.xml:44:9-46:55
+	android:value
+		ADDED from /Users/pgujar/Documents/Projects/Sudoku-Master-Android-Ads/app/src/main/AndroidManifest.xml:46:13-52
+	android:name
+		ADDED from /Users/pgujar/Documents/Projects/Sudoku-Master-Android-Ads/app/src/main/AndroidManifest.xml:45:13-58
+meta-data#com.facebook.sdk.ClientToken
+ADDED from /Users/pgujar/Documents/Projects/Sudoku-Master-Android-Ads/app/src/main/AndroidManifest.xml:48:9-50:61
+	android:value
+		ADDED from /Users/pgujar/Documents/Projects/Sudoku-Master-Android-Ads/app/src/main/AndroidManifest.xml:50:13-58
+	android:name
+		ADDED from /Users/pgujar/Documents/Projects/Sudoku-Master-Android-Ads/app/src/main/AndroidManifest.xml:49:13-56
+meta-data#com.google.android.gms.ads.APPLICATION_ID
+ADDED from /Users/pgujar/Documents/Projects/Sudoku-Master-Android-Ads/app/src/main/AndroidManifest.xml:53:9-54:69
+	android:value
+		ADDED from /Users/pgujar/Documents/Projects/Sudoku-Master-Android-Ads/app/src/main/AndroidManifest.xml:54:13-67
+	android:name
+		ADDED from /Users/pgujar/Documents/Projects/Sudoku-Master-Android-Ads/app/src/main/AndroidManifest.xml:53:20-76
+uses-sdk
+INJECTED from /Users/pgujar/Documents/Projects/Sudoku-Master-Android-Ads/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/pgujar/Documents/Projects/Sudoku-Master-Android-Ads/app/src/main/AndroidManifest.xml
+INJECTED from /Users/pgujar/Documents/Projects/Sudoku-Master-Android-Ads/app/src/main/AndroidManifest.xml
+MERGED from [androidx.biometric:biometric:1.2.0-alpha05] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/9115fe0d0d40a205573c2e41f2f22d6e/transformed/biometric-1.2.0-alpha05/AndroidManifest.xml:20:5-44
+MERGED from [androidx.biometric:biometric:1.2.0-alpha05] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/9115fe0d0d40a205573c2e41f2f22d6e/transformed/biometric-1.2.0-alpha05/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/a0aa2e0cd0998f2508cf5b4b02697f59/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/a0aa2e0cd0998f2508cf5b4b02697f59/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/9cce349d15bd73fcc379d51467c0dd58/transformed/media-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/9cce349d15bd73fcc379d51467c0dd58/transformed/media-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/e166ff55a1eaf0c0da0b14057bb26a96/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/e166ff55a1eaf0c0da0b14057bb26a96/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/7f1c43b054332b53e4d472379b0e74da/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/7f1c43b054332b53e4d472379b0e74da/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.hilt:hilt-navigation-compose:1.2.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/170af2c43b6b5fcdd24938a96579744a/transformed/hilt-navigation-compose-1.2.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.hilt:hilt-navigation-compose:1.2.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/170af2c43b6b5fcdd24938a96579744a/transformed/hilt-navigation-compose-1.2.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.hilt:hilt-navigation:1.2.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/3a601db355c2cd6ea30cfa8a71cc0586/transformed/hilt-navigation-1.2.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.hilt:hilt-navigation:1.2.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/3a601db355c2cd6ea30cfa8a71cc0586/transformed/hilt-navigation-1.2.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.dagger:hilt-android:2.51.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/4f9507c88b342756f542eb4770fbb5ca/transformed/hilt-android-2.51.1/AndroidManifest.xml:18:3-42
+MERGED from [com.google.dagger:hilt-android:2.51.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/4f9507c88b342756f542eb4770fbb5ca/transformed/hilt-android-2.51.1/AndroidManifest.xml:18:3-42
+MERGED from [androidx.navigation:navigation-common:2.7.7] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/db7c0cf1de40dd4d3e3f98671d346f75/transformed/navigation-common-2.7.7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common:2.7.7] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/db7c0cf1de40dd4d3e3f98671d346f75/transformed/navigation-common-2.7.7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime:2.7.7] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/afbb7a6846d07a9856410c104f351563/transformed/navigation-runtime-2.7.7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime:2.7.7] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/afbb7a6846d07a9856410c104f351563/transformed/navigation-runtime-2.7.7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common-ktx:2.7.7] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/660f6c9357a8ffd559ad072224747161/transformed/navigation-common-ktx-2.7.7/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-common-ktx:2.7.7] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/660f6c9357a8ffd559ad072224747161/transformed/navigation-common-ktx-2.7.7/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.7.7] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/dd976cce8df617b5a8ffb7ff1e904332/transformed/navigation-runtime-ktx-2.7.7/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.7.7] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/dd976cce8df617b5a8ffb7ff1e904332/transformed/navigation-runtime-ktx-2.7.7/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-compose:2.7.7] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/e6ea4c4a840f4798554e84f5d0410ec2/transformed/navigation-compose-2.7.7/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-compose:2.7.7] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/e6ea4c4a840f4798554e84f5d0410ec2/transformed/navigation-compose-2.7.7/AndroidManifest.xml:5:5-44
+MERGED from [com.google.accompanist:accompanist-permissions:0.35.1-alpha] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/5ceaeb281061bf6ae674f73982af3bf4/transformed/accompanist-permissions-0.35.1-alpha/AndroidManifest.xml:21:5-44
+MERGED from [com.google.accompanist:accompanist-permissions:0.35.1-alpha] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/5ceaeb281061bf6ae674f73982af3bf4/transformed/accompanist-permissions-0.35.1-alpha/AndroidManifest.xml:21:5-44
+MERGED from [androidx.compose.material3:material3-android:1.2.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/103e50c324eeb60042d10d4c1bf98535/transformed/material3-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material3:material3-android:1.2.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/103e50c324eeb60042d10d4c1bf98535/transformed/material3-release/AndroidManifest.xml:20:5-44
+MERGED from [io.coil-kt:coil-compose:2.7.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/c1c65035dc95ecaa4b94281bc980a74e/transformed/coil-compose-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt:coil-compose:2.7.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/c1c65035dc95ecaa4b94281bc980a74e/transformed/coil-compose-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt:coil-compose-base:2.7.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/11d2ad86ce108122c8de7a649cbf1bcc/transformed/coil-compose-base-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt:coil-compose-base:2.7.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/11d2ad86ce108122c8de7a649cbf1bcc/transformed/coil-compose-base-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-android:1.6.8] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/9dc0f1774599e9510ad7d22a2fc74d10/transformed/material-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-android:1.6.8] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/9dc0f1774599e9510ad7d22a2fc74d10/transformed/material-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-core-android:1.6.8] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/1e6bd389f393f9555cb920e9468d6f6a/transformed/material-icons-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-core-android:1.6.8] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/1e6bd389f393f9555cb920e9468d6f6a/transformed/material-icons-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-extended-android:1.6.8] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/28e3db1fbeb1074871ac63aac7b0e127/transformed/material-icons-extended-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-extended-android:1.6.8] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/28e3db1fbeb1074871ac63aac7b0e127/transformed/material-icons-extended-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-ripple-android:1.6.8] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/49cff24b67a64552cae254eefc3e661e/transformed/material-ripple-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-ripple-android:1.6.8] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/49cff24b67a64552cae254eefc3e661e/transformed/material-ripple-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-core-android:1.7.0-alpha02] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/2982f584036c7c2064671ff2a964e74c/transformed/animation-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-core-android:1.7.0-alpha02] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/2982f584036c7c2064671ff2a964e74c/transformed/animation-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-android:1.7.0-alpha02] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/dca28ec88b0248cf24bf3c2caac1effe/transformed/animation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-android:1.7.0-alpha02] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/dca28ec88b0248cf24bf3c2caac1effe/transformed/animation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.7.0-alpha02] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/ffe2a89d7724c7cac3ee0bd7c26aff1c/transformed/foundation-layout-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.7.0-alpha02] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/ffe2a89d7724c7cac3ee0bd7c26aff1c/transformed/foundation-layout-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-android:1.7.0-alpha02] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/60ce13f1a1e543473a1191fc9ee9b337/transformed/foundation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-android:1.7.0-alpha02] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/60ce13f1a1e543473a1191fc9ee9b337/transformed/foundation-release/AndroidManifest.xml:5:5-44
+MERGED from [com.google.accompanist:accompanist-drawablepainter:0.32.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/bb322f2a74c9728ecaf6a7b274194424/transformed/accompanist-drawablepainter-0.32.0/AndroidManifest.xml:21:5-44
+MERGED from [com.google.accompanist:accompanist-drawablepainter:0.32.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/bb322f2a74c9728ecaf6a7b274194424/transformed/accompanist-drawablepainter-0.32.0/AndroidManifest.xml:21:5-44
+MERGED from [io.coil-kt:coil:2.7.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/648d41bd8af5de48e8f0227b121816ef/transformed/coil-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt:coil:2.7.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/648d41bd8af5de48e8f0227b121816ef/transformed/coil-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt:coil-base:2.7.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/e6345d4b61f8a13729dc2d52a0dbf831/transformed/coil-base-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt:coil-base:2.7.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/e6345d4b61f8a13729dc2d52a0dbf831/transformed/coil-base-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/f5175fbc8b28f0caba0dc409fe62d861/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/f5175fbc8b28f0caba0dc409fe62d861/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.6.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/0017d4472723a6ce6849fe07df3ee299/transformed/appcompat-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.6.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/0017d4472723a6ce6849fe07df3ee299/transformed/appcompat-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.5.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/71536c784ec67f79c546e5c345a839ce/transformed/fragment-1.5.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.5.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/71536c784ec67f79c546e5c345a839ce/transformed/fragment-1.5.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.loader:loader:1.0.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/5b2ddbd49ddec58f4801e956309d7033/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/5b2ddbd49ddec58f4801e956309d7033/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-data-android:1.7.0-alpha02] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/01afee4c38b77e7253a40530eece19cd/transformed/ui-tooling-data-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-tooling-data-android:1.7.0-alpha02] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/01afee4c38b77e7253a40530eece19cd/transformed/ui-tooling-data-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.7.0-alpha02] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/7056832588ed7d14253381b7f3693ece/transformed/ui-tooling-preview-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.7.0-alpha02] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/7056832588ed7d14253381b7f3693ece/transformed/ui-tooling-preview-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-unit-android:1.7.0-alpha02] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/a619b487d2c6e71bc0e0d4674778d42e/transformed/ui-unit-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-unit-android:1.7.0-alpha02] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/a619b487d2c6e71bc0e0d4674778d42e/transformed/ui-unit-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-graphics-android:1.7.0-alpha02] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/59772e12e39a578de6e59af2f7215285/transformed/ui-graphics-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-graphics-android:1.7.0-alpha02] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/59772e12e39a578de6e59af2f7215285/transformed/ui-graphics-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-geometry-android:1.7.0-alpha02] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/871ffd9e0a7a66fb99b97d9e2fd968e5/transformed/ui-geometry-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-geometry-android:1.7.0-alpha02] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/871ffd9e0a7a66fb99b97d9e2fd968e5/transformed/ui-geometry-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-test-manifest:1.7.0-alpha02] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/2e8480e408ddf207584ffe670b947ee9/transformed/ui-test-manifest-1.7.0-alpha02/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-test-manifest:1.7.0-alpha02] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/2e8480e408ddf207584ffe670b947ee9/transformed/ui-test-manifest-1.7.0-alpha02/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-util-android:1.7.0-alpha02] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/74419f9a6d7d5c3cf81e2b8aed91bc28/transformed/ui-util-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-util-android:1.7.0-alpha02] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/74419f9a6d7d5c3cf81e2b8aed91bc28/transformed/ui-util-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-text-android:1.7.0-alpha02] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/bed581a6ea6604cf4a85dd69acfff0cd/transformed/ui-text-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-text-android:1.7.0-alpha02] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/bed581a6ea6604cf4a85dd69acfff0cd/transformed/ui-text-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/98cb1e3c4cddbaa1e876865b2b6fb478/transformed/emoji2-views-helper-1.3.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/98cb1e3c4cddbaa1e876865b2b6fb478/transformed/emoji2-views-helper-1.3.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2:1.3.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/556f90501067d439114257281afaa1e9/transformed/emoji2-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.3.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/556f90501067d439114257281afaa1e9/transformed/emoji2-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.4] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/f74df07994dad8665d8a19d4308fd633/transformed/lifecycle-process-2.8.4/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.4] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/f74df07994dad8665d8a19d4308fd633/transformed/lifecycle-process-2.8.4/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.8.4] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/31da507199f6a41941b2282882bffc9f/transformed/lifecycle-livedata-core-ktx-2.8.4/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.8.4] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/31da507199f6a41941b2282882bffc9f/transformed/lifecycle-livedata-core-ktx-2.8.4/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.8.4] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/250a5ae4f8012a0d4febd5b11bdd49a2/transformed/lifecycle-livedata-2.8.4/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.8.4] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/250a5ae4f8012a0d4febd5b11bdd49a2/transformed/lifecycle-livedata-2.8.4/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.8.4] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/ea01b939d011936e7fd891dad535a9e1/transformed/lifecycle-viewmodel-2.8.4/AndroidManifest.xml:4:5-43
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.8.4] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/ea01b939d011936e7fd891dad535a9e1/transformed/lifecycle-viewmodel-2.8.4/AndroidManifest.xml:4:5-43
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.8.4] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/d841c24bb27ac5a89456419102d9f6d5/transformed/lifecycle-viewmodel-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.8.4] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/d841c24bb27ac5a89456419102d9f6d5/transformed/lifecycle-viewmodel-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/448f9d025c37e88e4bac746898238147/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/448f9d025c37e88e4bac746898238147/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/92a9e66b14670f25fbc6421e0d682325/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/92a9e66b14670f25fbc6421e0d682325/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.8.4] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/7e105088618d24a0e384a340b92d6839/transformed/lifecycle-runtime-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.8.4] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/7e105088618d24a0e384a340b92d6839/transformed/lifecycle-runtime-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.4] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/c0eb22bda61bfd1658b7bf1cfb743ede/transformed/lifecycle-viewmodel-ktx-2.8.4/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.4] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/c0eb22bda61bfd1658b7bf1cfb743ede/transformed/lifecycle-viewmodel-ktx-2.8.4/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.8.4] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/7b0741b6880b19ce085d8fe4f7db0353/transformed/lifecycle-viewmodel-savedstate-2.8.4/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.8.4] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/7b0741b6880b19ce085d8fe4f7db0353/transformed/lifecycle-viewmodel-savedstate-2.8.4/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.8.4] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/484dfee0853dc56f50619b83171fa839/transformed/lifecycle-livedata-core-2.8.4/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.8.4] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/484dfee0853dc56f50619b83171fa839/transformed/lifecycle-livedata-core-2.8.4/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-compose-android:2.8.4] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/929c42dfaef982c20b76e6cf3fb81feb/transformed/lifecycle-runtime-compose-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-compose-android:2.8.4] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/929c42dfaef982c20b76e6cf3fb81feb/transformed/lifecycle-runtime-compose-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.8.4] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/99fcfdc80fff8ea76c7a3028ae55136f/transformed/lifecycle-runtime-ktx-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.8.4] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/99fcfdc80fff8ea76c7a3028ae55136f/transformed/lifecycle-runtime-ktx-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose-android:2.8.4] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/ca4d1cf57b5f9456afcdf82e93e4c667/transformed/lifecycle-viewmodel-compose-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose-android:2.8.4] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/ca4d1cf57b5f9456afcdf82e93e4c667/transformed/lifecycle-viewmodel-compose-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-android:1.7.0-alpha02] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/b7e54c814e9695c0a2e7dc41844908d8/transformed/ui-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-android:1.7.0-alpha02] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/b7e54c814e9695c0a2e7dc41844908d8/transformed/ui-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-tooling-android:1.7.0-alpha02] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/d54d5d396fc5aaa19f2fef70247ffb7e/transformed/ui-tooling-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-android:1.7.0-alpha02] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/d54d5d396fc5aaa19f2fef70247ffb7e/transformed/ui-tooling-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity-compose:1.9.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/9e1202b49d0c81d70ae6eadae53504de/transformed/activity-compose-1.9.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-compose:1.9.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/9e1202b49d0c81d70ae6eadae53504de/transformed/activity-compose-1.9.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-ktx:1.9.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/972758661d00b148c95e72528db9a7eb/transformed/activity-ktx-1.9.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-ktx:1.9.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/972758661d00b148c95e72528db9a7eb/transformed/activity-ktx-1.9.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity:1.9.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/70dc9006848004d7849d128ee4f2fdf3/transformed/activity-1.9.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.9.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/70dc9006848004d7849d128ee4f2fdf3/transformed/activity-1.9.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/cae95f0bd9efd147867b567a28026b1d/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/cae95f0bd9efd147867b567a28026b1d/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/ed1b87da4a88151be136cc0d4f89d81a/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/ed1b87da4a88151be136cc0d4f89d81a/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/80f87e30a109b8769ad9557da951ffbc/transformed/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/80f87e30a109b8769ad9557da951ffbc/transformed/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/ace95ab78e5dfde3488f7f187cf9c612/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/ace95ab78e5dfde3488f7f187cf9c612/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/53b8606276a3442823fb113ff2686ba4/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/53b8606276a3442823fb113ff2686ba4/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/af791d65fc147eccfa17ac071282ebad/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/af791d65fc147eccfa17ac071282ebad/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/29acb7a35ffb797dce4bdb6d25a0f719/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/29acb7a35ffb797dce4bdb6d25a0f719/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/507ed53e597ed3c12497da0acfc96452/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/507ed53e597ed3c12497da0acfc96452/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/f4ddb131c51b272c59a8fe5aa5034a1c/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/f4ddb131c51b272c59a8fe5aa5034a1c/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.autofill:autofill:1.0.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/4855036ca36bd3801fadbcf6f117bf7d/transformed/autofill-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.autofill:autofill:1.0.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/4855036ca36bd3801fadbcf6f117bf7d/transformed/autofill-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.graphics:graphics-path:1.0.0-beta02] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/d761e0ce7625408ce68194736eb51849/transformed/graphics-path-1.0.0-beta02/AndroidManifest.xml:5:5-44
+MERGED from [androidx.graphics:graphics-path:1.0.0-beta02] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/d761e0ce7625408ce68194736eb51849/transformed/graphics-path-1.0.0-beta02/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core:1.13.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/3b7ba18dcd45d8a448d2d8cc6fd7166b/transformed/core-1.13.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.13.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/3b7ba18dcd45d8a448d2d8cc6fd7166b/transformed/core-1.13.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/c274f08a18c6b36cb7c5a0907eb92028/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/c274f08a18c6b36cb7c5a0907eb92028/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.core:core-ktx:1.13.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/766216044f1a7330a41a1a676d896c29/transformed/core-ktx-1.13.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.13.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/766216044f1a7330a41a1a676d896c29/transformed/core-ktx-1.13.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.room:room-runtime:2.6.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/c8f0e094151c02ac847fbd14635e3837/transformed/room-runtime-2.6.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.room:room-runtime:2.6.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/c8f0e094151c02ac847fbd14635e3837/transformed/room-runtime-2.6.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.room:room-ktx:2.6.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/38aeba6d1837bf0c437c4c2d76711457/transformed/room-ktx-2.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.room:room-ktx:2.6.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/38aeba6d1837bf0c437c4c2d76711457/transformed/room-ktx-2.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.datastore:datastore-core-android:1.1.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/3a3f7252d56137778c38e147365d877b/transformed/datastore-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.datastore:datastore-core-android:1.1.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/3a3f7252d56137778c38e147365d877b/transformed/datastore-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.datastore:datastore-android:1.1.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/3aa81be33c2a74fcd81cdf589003dcbb/transformed/datastore-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.datastore:datastore-android:1.1.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/3aa81be33c2a74fcd81cdf589003dcbb/transformed/datastore-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.datastore:datastore-preferences-android:1.1.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/22ba2e2119894175e8f60fbb23397813/transformed/datastore-preferences-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.datastore:datastore-preferences-android:1.1.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/22ba2e2119894175e8f60fbb23397813/transformed/datastore-preferences-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.7.0-alpha02] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/f4ed5fe4b9a3437ba673a385e0dd74ca/transformed/runtime-saveable-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.7.0-alpha02] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/f4ed5fe4b9a3437ba673a385e0dd74ca/transformed/runtime-saveable-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-android:1.7.0-alpha02] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/fc7ebaa97a2e8afca8eb5378bfb272e7/transformed/runtime-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-android:1.7.0-alpha02] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/fc7ebaa97a2e8afca8eb5378bfb272e7/transformed/runtime-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.sqlite:sqlite-framework:2.4.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/03c64cdccb2d392af775ea721977f8e5/transformed/sqlite-framework-2.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-framework:2.4.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/03c64cdccb2d392af775ea721977f8e5/transformed/sqlite-framework-2.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.4.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/1c1b4b1a96241f1057f5527ef42bcf2b/transformed/sqlite-2.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.4.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/1c1b4b1a96241f1057f5527ef42bcf2b/transformed/sqlite-2.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/7ae650fcfa90ed775fecf4c3a06bd48f/transformed/annotation-experimental-1.4.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/7ae650fcfa90ed775fecf4c3a06bd48f/transformed/annotation-experimental-1.4.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/f5333c6f6ab86a7b89b8eb1ec2901b1e/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/f5333c6f6ab86a7b89b8eb1ec2901b1e/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/37c454b4aa4e332e6b262e877a9e2a87/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/37c454b4aa4e332e6b262e877a9e2a87/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/35de2812a08cb77f7233c6d5b95d9aa4/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/35de2812a08cb77f7233c6d5b95d9aa4/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/7a5c4acb600df186a48810fa12050a1c/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/7a5c4acb600df186a48810fa12050a1c/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/b8cedb042432e3e5ef08bf5bcb9e3e63/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/b8cedb042432e3e5ef08bf5bcb9e3e63/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/86ac727616b51805a22f6400a1e03dd8/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/86ac727616b51805a22f6400a1e03dd8/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/23a38fcdb3fb189e0ef504ac33cd80d1/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/23a38fcdb3fb189e0ef504ac33cd80d1/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/372cad6539f52033f0e470b5a84a4882/transformed/profileinstaller-1.3.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/372cad6539f52033f0e470b5a84a4882/transformed/profileinstaller-1.3.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/8534908d75987492a302cb1ba5fdc27d/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/8534908d75987492a302cb1ba5fdc27d/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/a17118e88f060a9ce63905182c0331a0/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/a17118e88f060a9ce63905182c0331a0/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.7] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/c414a68123bee3ce57422e0c2aed1f79/transformed/exifinterface-1.3.7/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.7] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/c414a68123bee3ce57422e0c2aed1f79/transformed/exifinterface-1.3.7/AndroidManifest.xml:20:5-22:41
+MERGED from [com.facebook.android:audience-network-sdk:6.18.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/726d07880292ca9f8178421d9276d879/transformed/audience-network-sdk-6.18.0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.android:audience-network-sdk:6.18.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/726d07880292ca9f8178421d9276d879/transformed/audience-network-sdk-6.18.0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.dagger:dagger-lint-aar:2.51.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/bd1d2de2b9615b743269ca91c1fc98c8/transformed/dagger-lint-aar-2.51.1/AndroidManifest.xml:18:3-42
+MERGED from [com.google.dagger:dagger-lint-aar:2.51.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/bd1d2de2b9615b743269ca91c1fc98c8/transformed/dagger-lint-aar-2.51.1/AndroidManifest.xml:18:3-42
+MERGED from [com.google.android.gms:play-services-basement:11.0.4] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/66b7ba456253e755919db7fccb42b831/transformed/play-services-basement-11.0.4/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-basement:11.0.4] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/66b7ba456253e755919db7fccb42b831/transformed/play-services-basement-11.0.4/AndroidManifest.xml:17:5-43
+	android:targetSdkVersion
+		INJECTED from /Users/pgujar/Documents/Projects/Sudoku-Master-Android-Ads/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/pgujar/Documents/Projects/Sudoku-Master-Android-Ads/app/src/main/AndroidManifest.xml
+activity#androidx.activity.ComponentActivity
+ADDED from [androidx.compose.ui:ui-test-manifest:1.7.0-alpha02] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/2e8480e408ddf207584ffe670b947ee9/transformed/ui-test-manifest-1.7.0-alpha02/AndroidManifest.xml:23:9-25:39
+	android:exported
+		ADDED from [androidx.compose.ui:ui-test-manifest:1.7.0-alpha02] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/2e8480e408ddf207584ffe670b947ee9/transformed/ui-test-manifest-1.7.0-alpha02/AndroidManifest.xml:25:13-36
+	android:name
+		ADDED from [androidx.compose.ui:ui-test-manifest:1.7.0-alpha02] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/2e8480e408ddf207584ffe670b947ee9/transformed/ui-test-manifest-1.7.0-alpha02/AndroidManifest.xml:24:13-63
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/556f90501067d439114257281afaa1e9/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.4] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/f74df07994dad8665d8a19d4308fd633/transformed/lifecycle-process-2.8.4/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.4] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/f74df07994dad8665d8a19d4308fd633/transformed/lifecycle-process-2.8.4/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/372cad6539f52033f0e470b5a84a4882/transformed/profileinstaller-1.3.1/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/372cad6539f52033f0e470b5a84a4882/transformed/profileinstaller-1.3.1/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/8534908d75987492a302cb1ba5fdc27d/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/8534908d75987492a302cb1ba5fdc27d/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/556f90501067d439114257281afaa1e9/transformed/emoji2-1.3.0/AndroidManifest.xml:28:13-31
+	android:authorities
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/556f90501067d439114257281afaa1e9/transformed/emoji2-1.3.0/AndroidManifest.xml:26:13-68
+	android:exported
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/556f90501067d439114257281afaa1e9/transformed/emoji2-1.3.0/AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/556f90501067d439114257281afaa1e9/transformed/emoji2-1.3.0/AndroidManifest.xml:25:13-67
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/556f90501067d439114257281afaa1e9/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/556f90501067d439114257281afaa1e9/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/556f90501067d439114257281afaa1e9/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.8.4] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/f74df07994dad8665d8a19d4308fd633/transformed/lifecycle-process-2.8.4/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.8.4] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/f74df07994dad8665d8a19d4308fd633/transformed/lifecycle-process-2.8.4/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.8.4] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/f74df07994dad8665d8a19d4308fd633/transformed/lifecycle-process-2.8.4/AndroidManifest.xml:30:17-78
+activity#androidx.compose.ui.tooling.PreviewActivity
+ADDED from [androidx.compose.ui:ui-tooling-android:1.7.0-alpha02] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/d54d5d396fc5aaa19f2fef70247ffb7e/transformed/ui-tooling-release/AndroidManifest.xml:23:9-25:39
+	android:exported
+		ADDED from [androidx.compose.ui:ui-tooling-android:1.7.0-alpha02] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/d54d5d396fc5aaa19f2fef70247ffb7e/transformed/ui-tooling-release/AndroidManifest.xml:25:13-36
+	android:name
+		ADDED from [androidx.compose.ui:ui-tooling-android:1.7.0-alpha02] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/d54d5d396fc5aaa19f2fef70247ffb7e/transformed/ui-tooling-release/AndroidManifest.xml:24:13-71
+permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/3b7ba18dcd45d8a448d2d8cc6fd7166b/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.13.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/3b7ba18dcd45d8a448d2d8cc6fd7166b/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.13.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/3b7ba18dcd45d8a448d2d8cc6fd7166b/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
+permission#com.sudokumaster.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/3b7ba18dcd45d8a448d2d8cc6fd7166b/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.13.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/3b7ba18dcd45d8a448d2d8cc6fd7166b/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.13.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/3b7ba18dcd45d8a448d2d8cc6fd7166b/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
+uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/3b7ba18dcd45d8a448d2d8cc6fd7166b/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.13.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/3b7ba18dcd45d8a448d2d8cc6fd7166b/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
+uses-permission#com.sudokumaster.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/3b7ba18dcd45d8a448d2d8cc6fd7166b/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.13.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/3b7ba18dcd45d8a448d2d8cc6fd7166b/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
+service#androidx.room.MultiInstanceInvalidationService
+ADDED from [androidx.room:room-runtime:2.6.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/c8f0e094151c02ac847fbd14635e3837/transformed/room-runtime-2.6.1/AndroidManifest.xml:24:9-28:63
+	android:exported
+		ADDED from [androidx.room:room-runtime:2.6.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/c8f0e094151c02ac847fbd14635e3837/transformed/room-runtime-2.6.1/AndroidManifest.xml:27:13-37
+	tools:ignore
+		ADDED from [androidx.room:room-runtime:2.6.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/c8f0e094151c02ac847fbd14635e3837/transformed/room-runtime-2.6.1/AndroidManifest.xml:28:13-60
+	android:directBootAware
+		ADDED from [androidx.room:room-runtime:2.6.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/c8f0e094151c02ac847fbd14635e3837/transformed/room-runtime-2.6.1/AndroidManifest.xml:26:13-43
+	android:name
+		ADDED from [androidx.room:room-runtime:2.6.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/c8f0e094151c02ac847fbd14635e3837/transformed/room-runtime-2.6.1/AndroidManifest.xml:25:13-74
+meta-data#androidx.profileinstaller.ProfileInstallerInitializer
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/372cad6539f52033f0e470b5a84a4882/transformed/profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/372cad6539f52033f0e470b5a84a4882/transformed/profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/372cad6539f52033f0e470b5a84a4882/transformed/profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+receiver#androidx.profileinstaller.ProfileInstallReceiver
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/372cad6539f52033f0e470b5a84a4882/transformed/profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+	android:enabled
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/372cad6539f52033f0e470b5a84a4882/transformed/profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/372cad6539f52033f0e470b5a84a4882/transformed/profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+	android:permission
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/372cad6539f52033f0e470b5a84a4882/transformed/profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+	android:directBootAware
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/372cad6539f52033f0e470b5a84a4882/transformed/profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/372cad6539f52033f0e470b5a84a4882/transformed/profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+intent-filter#action:name:androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/372cad6539f52033f0e470b5a84a4882/transformed/profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+action#androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/372cad6539f52033f0e470b5a84a4882/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/372cad6539f52033f0e470b5a84a4882/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+intent-filter#action:name:androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/372cad6539f52033f0e470b5a84a4882/transformed/profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+action#androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/372cad6539f52033f0e470b5a84a4882/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/372cad6539f52033f0e470b5a84a4882/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+intent-filter#action:name:androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/372cad6539f52033f0e470b5a84a4882/transformed/profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+action#androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/372cad6539f52033f0e470b5a84a4882/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/372cad6539f52033f0e470b5a84a4882/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+intent-filter#action:name:androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/372cad6539f52033f0e470b5a84a4882/transformed/profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+action#androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/372cad6539f52033f0e470b5a84a4882/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/372cad6539f52033f0e470b5a84a4882/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+queries
+ADDED from [com.facebook.android:audience-network-sdk:6.18.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/726d07880292ca9f8178421d9276d879/transformed/audience-network-sdk-6.18.0/AndroidManifest.xml:11:5-13:15
+package#com.facebook.katana
+ADDED from [com.facebook.android:audience-network-sdk:6.18.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/726d07880292ca9f8178421d9276d879/transformed/audience-network-sdk-6.18.0/AndroidManifest.xml:12:9-55
+	android:name
+		ADDED from [com.facebook.android:audience-network-sdk:6.18.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/726d07880292ca9f8178421d9276d879/transformed/audience-network-sdk-6.18.0/AndroidManifest.xml:12:18-52
+activity#com.facebook.ads.AudienceNetworkActivity
+ADDED from [com.facebook.android:audience-network-sdk:6.18.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/726d07880292ca9f8178421d9276d879/transformed/audience-network-sdk-6.18.0/AndroidManifest.xml:20:9-24:75
+	android:exported
+		ADDED from [com.facebook.android:audience-network-sdk:6.18.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/726d07880292ca9f8178421d9276d879/transformed/audience-network-sdk-6.18.0/AndroidManifest.xml:23:13-37
+	android:configChanges
+		ADDED from [com.facebook.android:audience-network-sdk:6.18.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/726d07880292ca9f8178421d9276d879/transformed/audience-network-sdk-6.18.0/AndroidManifest.xml:22:13-106
+	android:theme
+		ADDED from [com.facebook.android:audience-network-sdk:6.18.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/726d07880292ca9f8178421d9276d879/transformed/audience-network-sdk-6.18.0/AndroidManifest.xml:24:13-72
+	android:name
+		ADDED from [com.facebook.android:audience-network-sdk:6.18.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/726d07880292ca9f8178421d9276d879/transformed/audience-network-sdk-6.18.0/AndroidManifest.xml:21:13-68
+provider#com.facebook.ads.AudienceNetworkContentProvider
+ADDED from [com.facebook.android:audience-network-sdk:6.18.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/726d07880292ca9f8178421d9276d879/transformed/audience-network-sdk-6.18.0/AndroidManifest.xml:26:9-29:40
+	android:authorities
+		ADDED from [com.facebook.android:audience-network-sdk:6.18.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/726d07880292ca9f8178421d9276d879/transformed/audience-network-sdk-6.18.0/AndroidManifest.xml:28:13-82
+	android:exported
+		ADDED from [com.facebook.android:audience-network-sdk:6.18.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/726d07880292ca9f8178421d9276d879/transformed/audience-network-sdk-6.18.0/AndroidManifest.xml:29:13-37
+	android:name
+		ADDED from [com.facebook.android:audience-network-sdk:6.18.0] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/726d07880292ca9f8178421d9276d879/transformed/audience-network-sdk-6.18.0/AndroidManifest.xml:27:13-75
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:11.0.4] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/66b7ba456253e755919db7fccb42b831/transformed/play-services-basement-11.0.4/AndroidManifest.xml:20:9-121
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:11.0.4] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/66b7ba456253e755919db7fccb42b831/transformed/play-services-basement-11.0.4/AndroidManifest.xml:20:66-119
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:11.0.4] /Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/66b7ba456253e755919db7fccb42b831/transformed/play-services-basement-11.0.4/AndroidManifest.xml:20:20-65

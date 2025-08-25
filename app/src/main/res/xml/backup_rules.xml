@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!-- Exclude sensitive authentication data from backup -->
+    <exclude domain="database" path="auth_tokens.db" />
+    <exclude domain="sharedpref" path="auth_prefs.xml" />
+    <!-- Include game progress and settings -->
+    <include domain="database" path="sudoku_database" />
+    <include domain="sharedpref" path="game_settings.xml" />
+</full-backup-content>

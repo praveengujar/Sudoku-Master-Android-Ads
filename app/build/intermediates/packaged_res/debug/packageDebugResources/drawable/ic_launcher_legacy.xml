@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    
+    <!-- Background circle -->
+    <path
+        android:pathData="M24,24m-22,0a22,22 0,1 1,44 0a22,22 0,1 1,-44 0"
+        android:fillColor="#6750A4"/>
+    
+    <!-- Sudoku grid background -->
+    <path
+        android:pathData="M12,12h24v24h-24z"
+        android:fillColor="#FFFFFF"/>
+    
+    <!-- Grid lines -->
+    <path
+        android:pathData="M12,20h24M12,28h24M20,12v24M28,12v24"
+        android:strokeWidth="1"
+        android:strokeColor="#E0E0E0"/>
+    
+    <!-- Thick separators -->
+    <path
+        android:pathData="M12,20h24M12,28h24M20,12v24M28,12v24"
+        android:strokeWidth="1.5"
+        android:strokeColor="#666666"/>
+        
+    <!-- Border -->
+    <path
+        android:pathData="M12,12h24v24h-24z"
+        android:strokeWidth="1"
+        android:strokeColor="#333333"
+        android:fillColor="@android:color/transparent"/>
+</vector>

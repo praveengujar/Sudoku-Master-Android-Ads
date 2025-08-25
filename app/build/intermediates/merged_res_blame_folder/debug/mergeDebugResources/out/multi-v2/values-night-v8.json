@@ -1,0 +1,45 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.sudokumaster.android.app-mergeDebugResources-71:/values-night-v8/values-night-v8.xml",
+            "map": [
+                {
+                    "source": "/Users/pgujar/.gradle/caches/9.0-milestone-1/transforms/0017d4472723a6ce6849fe07df3ee299/transformed/appcompat-1.6.1/res/values-night-v8/values-night-v8.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,125,209,293,389,491,593,687",
+                        "endColumns": "69,83,83,95,101,101,93,88",
+                        "endOffsets": "120,204,288,384,486,588,682,771"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,28",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,125,209,293,389,491,593,1458",
+                        "endColumns": "69,83,83,95,101,101,93,88",
+                        "endOffsets": "120,204,288,384,486,588,682,1542"
+                    }
+                },
+                {
+                    "source": "/Users/pgujar/Documents/Projects/Sudoku-Master-Android-Ads/app/src/main/res/values-night/themes.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "126",
+                        "endLines": "21",
+                        "endColumns": "12",
+                        "endOffsets": "1002"
+                    },
+                    "to": {
+                        "startLines": "9",
+                        "startColumns": "4",
+                        "startOffsets": "687",
+                        "endLines": "27",
+                        "endColumns": "12",
+                        "endOffsets": "1453"
+                    }
+                }
+            ]
+        }
+    ]
+}

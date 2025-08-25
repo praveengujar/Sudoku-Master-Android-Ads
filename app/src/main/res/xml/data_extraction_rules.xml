@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-extraction-rules>
+    <cloud-backup>
+        <!-- Exclude sensitive authentication data from cloud backup -->
+        <exclude domain="database" path="auth_tokens.db" />
+        <exclude domain="sharedpref" path="auth_prefs.xml" />
+    </cloud-backup>
+    <device-transfer>
+        <!-- Allow game progress to be transferred between devices -->
+        <include domain="database" path="sudoku_database" />
+        <include domain="sharedpref" path="game_settings.xml" />
+    </device-transfer>
+</data-extraction-rules>

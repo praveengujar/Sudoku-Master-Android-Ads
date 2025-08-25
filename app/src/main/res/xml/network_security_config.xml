@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="false">
+        <domain includeSubdomains="true">sudoku-master-api-93673815784.us-central1.run.app</domain>
+    </domain-config>
+</network-security-config>
