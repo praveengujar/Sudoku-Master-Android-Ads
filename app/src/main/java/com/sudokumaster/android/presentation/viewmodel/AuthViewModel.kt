@@ -342,6 +342,29 @@ class AuthViewModel @Inject constructor(
         // This could be handled by observing isGuestMode in the SudokuGameViewModel
     }
 
+    suspend fun deleteUser(username: String): Boolean {
+        _isLoading.value = true
+        return try {
+            val success = authRepository.deleteUser(username)
+            if (success) {
+                println("✅ User '$username' deleted from server")
+                // If deleting current user, logout
+                if (_currentUser.value?.username == username) {
+                    logout()
+                }
+            } else {
+                _error.value = "Failed to delete user '$username'"
+            }
+            success
+        } catch (error: Exception) {
+            _error.value = "Error deleting user: ${error.message}"
+            println("❌ Error deleting user '$username': ${error.message}")
+            false
+        } finally {
+            _isLoading.value = false
+        }
+    }
+
     suspend fun toggleBiometric(enabled: Boolean) {
         if (!authRepository.isBiometricAvailable()) {
             _error.value = "Biometric authentication is not available on this device"

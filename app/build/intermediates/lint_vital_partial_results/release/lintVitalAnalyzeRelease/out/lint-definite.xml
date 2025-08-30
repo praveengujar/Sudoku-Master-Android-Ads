@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.12.1" type="incidents">
+
+    <incident
+        id="FullBackupContent"
+        severity="fatal"
+        message="`auth_tokens.db` is not in an included path">
+        <location
+            file="${:app*release*MAIN*sourceProvider*0*resDir*0}/xml/backup_rules.xml"
+            line="4"
+            column="38"
+            startOffset="161"
+            endLine="4"
+            endColumn="52"
+            endOffset="175"/>
+    </incident>
+
+    <incident
+        id="FullBackupContent"
+        severity="fatal"
+        message="`auth_prefs.xml` is not in an included path">
+        <location
+            file="${:app*release*MAIN*sourceProvider*0*resDir*0}/xml/backup_rules.xml"
+            line="5"
+            column="40"
+            startOffset="219"
+            endLine="5"
+            endColumn="54"
+            endOffset="233"/>
+    </incident>
+
+</incidents>

@@ -1,11 +1,22 @@
 package com.sudokumaster.android.presentation.ui.auth
 
+import androidx.compose.foundation.background
+import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.KeyboardOptions
+import androidx.compose.foundation.verticalScroll
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Face
+import androidx.compose.material.icons.filled.Person
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Brush
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.KeyboardType
@@ -51,35 +62,53 @@ fun AuthScreen(
     }
 
     Box(
-        modifier = Modifier.fillMaxSize(),
+        modifier = Modifier
+            .fillMaxSize()
+            .background(
+                brush = Brush.verticalGradient(
+                    colors = listOf(
+                        Color(0xFF0D1421),
+                        Color(0xFF1B2635),
+                        Color(0xFF0F1419)
+                    ),
+                    startY = 0f,
+                    endY = Float.POSITIVE_INFINITY
+                )
+            ),
         contentAlignment = Alignment.Center
     ) {
         Card(
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(24.dp),
-            elevation = CardDefaults.cardElevation(defaultElevation = 8.dp)
+            elevation = CardDefaults.cardElevation(defaultElevation = 16.dp),
+            colors = CardDefaults.cardColors(
+                containerColor = Color(0xFF1E2A38).copy(alpha = 0.95f)
+            ),
+            shape = RoundedCornerShape(24.dp)
         ) {
             Column(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .padding(24.dp),
+                    .padding(32.dp),
                 horizontalAlignment = Alignment.CenterHorizontally,
-                verticalArrangement = Arrangement.spacedBy(16.dp)
+                verticalArrangement = Arrangement.spacedBy(20.dp)
             ) {
-                // Title
+                // Title with vibrant color
                 Text(
                     text = "Sudoku Master",
-                    fontSize = 28.sp,
+                    fontSize = 32.sp,
                     fontWeight = FontWeight.Bold,
-                    textAlign = TextAlign.Center
+                    textAlign = TextAlign.Center,
+                    color = Color(0xFF00D4FF)
                 )
                 
                 Text(
                     text = if (isRegistering) "Create Account" else "Welcome Back",
-                    fontSize = 18.sp,
+                    fontSize = 20.sp,
                     textAlign = TextAlign.Center,
-                    color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.7f)
+                    color = Color.White.copy(alpha = 0.8f),
+                    fontWeight = FontWeight.Medium
                 )
 
                 Spacer(modifier = Modifier.height(8.dp))
@@ -123,22 +152,36 @@ fun AuthScreen(
                 OutlinedTextField(
                     value = username,
                     onValueChange = { username = it },
-                    label = { Text("Username") },
+                    label = { Text("Username", color = Color.White.copy(alpha = 0.7f)) },
                     modifier = Modifier.fillMaxWidth(),
                     enabled = !isLoading,
-                    singleLine = true
+                    singleLine = true,
+                    colors = OutlinedTextFieldDefaults.colors(
+                        focusedBorderColor = Color(0xFF00D4FF),
+                        unfocusedBorderColor = Color.White.copy(alpha = 0.3f),
+                        focusedTextColor = Color.White,
+                        unfocusedTextColor = Color.White,
+                        cursorColor = Color(0xFF00D4FF)
+                    )
                 )
 
                 // Password field
                 OutlinedTextField(
                     value = password,
                     onValueChange = { password = it },
-                    label = { Text("Password") },
+                    label = { Text("Password", color = Color.White.copy(alpha = 0.7f)) },
                     modifier = Modifier.fillMaxWidth(),
                     enabled = !isLoading,
                     visualTransformation = PasswordVisualTransformation(),
                     keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Password),
-                    singleLine = true
+                    singleLine = true,
+                    colors = OutlinedTextFieldDefaults.colors(
+                        focusedBorderColor = Color(0xFF00D4FF),
+                        unfocusedBorderColor = Color.White.copy(alpha = 0.3f),
+                        focusedTextColor = Color.White,
+                        unfocusedTextColor = Color.White,
+                        cursorColor = Color(0xFF00D4FF)
+                    )
                 )
 
                 // Enable biometric switch (for new logins)
@@ -150,17 +193,24 @@ fun AuthScreen(
                     ) {
                         Text(
                             text = "Enable $biometricDisplayName",
-                            modifier = Modifier.weight(1f)
+                            modifier = Modifier.weight(1f),
+                            color = Color.White.copy(alpha = 0.8f)
                         )
                         Switch(
                             checked = enableBiometric,
                             onCheckedChange = { enableBiometric = it },
-                            enabled = !isLoading
+                            enabled = !isLoading,
+                            colors = SwitchDefaults.colors(
+                                checkedThumbColor = Color(0xFF00D4FF),
+                                checkedTrackColor = Color(0xFF00D4FF).copy(alpha = 0.5f),
+                                uncheckedThumbColor = Color.White.copy(alpha = 0.6f),
+                                uncheckedTrackColor = Color.White.copy(alpha = 0.2f)
+                            )
                         )
                     }
                 }
 
-                // Main action button
+                // Main action button with gradient
                 Button(
                     onClick = {
                         scope.launch {
@@ -172,16 +222,37 @@ fun AuthScreen(
                             }
                         }
                     },
-                    modifier = Modifier.fillMaxWidth(),
-                    enabled = !isLoading && username.isNotBlank() && password.isNotBlank()
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .height(56.dp)
+                        .clip(RoundedCornerShape(16.dp))
+                        .background(
+                            brush = Brush.horizontalGradient(
+                                colors = listOf(
+                                    Color(0xFF00D4FF),
+                                    Color(0xFF0099CC),
+                                    Color(0xFF0066FF)
+                                )
+                            )
+                        ),
+                    enabled = !isLoading && username.isNotBlank() && password.isNotBlank(),
+                    colors = ButtonDefaults.buttonColors(
+                        containerColor = Color.Transparent
+                    )
                 ) {
                     if (isLoading) {
                         CircularProgressIndicator(
-                            modifier = Modifier.size(16.dp),
-                            strokeWidth = 2.dp
+                            modifier = Modifier.size(20.dp),
+                            strokeWidth = 2.dp,
+                            color = Color.White
                         )
                     } else {
-                        Text(if (isRegistering) "Create Account" else "Sign In")
+                        Text(
+                            text = if (isRegistering) "Create Account" else "Sign In",
+                            fontSize = 18.sp,
+                            fontWeight = FontWeight.SemiBold,
+                            color = Color.White
+                        )
                     }
                 }
 
@@ -195,7 +266,8 @@ fun AuthScreen(
                 ) {
                     Text(
                         if (isRegistering) "Already have an account? Sign in" 
-                        else "Don't have an account? Create one"
+                        else "Don't have an account? Create one",
+                        color = Color(0xFF00D4FF)
                     )
                 }
 
@@ -208,10 +280,21 @@ fun AuthScreen(
                     onClick = {
                         authViewModel.continueAsGuest()
                     },
-                    modifier = Modifier.fillMaxWidth(),
-                    enabled = !isLoading
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .height(48.dp),
+                    enabled = !isLoading,
+                    shape = RoundedCornerShape(12.dp),
+                    border = BorderStroke(2.dp, Color(0xFF00FF88)),
+                    colors = ButtonDefaults.outlinedButtonColors(
+                        contentColor = Color(0xFF00FF88)
+                    )
                 ) {
-                    Text("Continue as Guest (Offline Mode)")
+                    Text(
+                        text = "Continue as Guest (Offline Mode)",
+                        fontWeight = FontWeight.Medium,
+                        fontSize = 16.sp
+                    )
                 }
 
                 // Debug info (only in debug builds)
@@ -219,7 +302,7 @@ fun AuthScreen(
                     Text(
                         text = "• Saved login available",
                         fontSize = 12.sp,
-                        color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.6f)
+                        color = Color.White.copy(alpha = 0.6f)
                     )
                 }
             }

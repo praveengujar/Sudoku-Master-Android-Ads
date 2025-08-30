@@ -17,4 +17,5 @@ interface AuthRepository {
     suspend fun isBiometricEnabled(): Boolean
     fun isBiometricAvailable(): Boolean
     suspend fun updateTokensBiometricProtection(enabled: Boolean)
+    suspend fun deleteUser(username: String): Boolean
 }

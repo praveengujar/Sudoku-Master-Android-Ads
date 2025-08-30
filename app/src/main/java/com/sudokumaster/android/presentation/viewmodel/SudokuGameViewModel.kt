@@ -284,6 +284,19 @@ class SudokuGameViewModel @Inject constructor(
         _errors.value = newErrors
     }
 
+    fun redo() {
+        // Simple redo functionality - restart the current puzzle
+        val currentGrid = _originalGrid.value
+        _grid.value = currentGrid.map { it.clone() }.toTypedArray()
+        _errors.value = emptyMap()
+        _selectedCell.value = null
+        _hintCell.value = null
+        
+        // Reset timer
+        _timeSpentSeconds.value = 0
+        startTimer()
+    }
+
     fun getHint() {
         val selectedPos = _selectedCell.value ?: return
         

@@ -21,6 +21,8 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.sudokumaster.android.domain.model.CellPosition
 import com.sudokumaster.android.domain.model.SudokuGrid
+import com.sudokumaster.android.presentation.theme.SudokuCustomShapes
+import com.sudokumaster.android.presentation.theme.SudokuTextStyles
 
 @Composable
 fun SudokuBoard(
@@ -35,24 +37,25 @@ fun SudokuBoard(
     ElevatedCard(
         modifier = modifier
             .shadow(
-                elevation = 12.dp,
-                shape = RoundedCornerShape(24.dp),
-                ambientColor = MaterialTheme.colorScheme.primary.copy(alpha = 0.1f)
+                elevation = 16.dp,
+                shape = SudokuCustomShapes.ExpressiveSudokuBoard,
+                ambientColor = MaterialTheme.colorScheme.primary.copy(alpha = 0.15f),
+                spotColor = MaterialTheme.colorScheme.primary.copy(alpha = 0.25f)
             ),
-        elevation = CardDefaults.elevatedCardElevation(defaultElevation = 12.dp),
-        shape = RoundedCornerShape(24.dp),
+        elevation = CardDefaults.elevatedCardElevation(defaultElevation = 16.dp),
+        shape = SudokuCustomShapes.ExpressiveSudokuBoard,
         colors = CardDefaults.elevatedCardColors(
             containerColor = MaterialTheme.colorScheme.surfaceContainerHighest
         )
     ) {
         Column(
-            modifier = Modifier.padding(16.dp),
-            verticalArrangement = Arrangement.spacedBy(2.dp)
+            modifier = Modifier.padding(20.dp),
+            verticalArrangement = Arrangement.spacedBy(4.dp)
         ) {
             // Create 3x3 grid of boxes for visual separation
             repeat(3) { boxRow ->
                 Row(
-                    horizontalArrangement = Arrangement.spacedBy(6.dp)
+                    horizontalArrangement = Arrangement.spacedBy(8.dp)
                 ) {
                     repeat(3) { boxCol ->
                         SudokuBox(
@@ -85,21 +88,26 @@ private fun SudokuBox(
     onCellClick: (Int, Int) -> Unit,
     modifier: Modifier = Modifier
 ) {
-    Card(
-        modifier = modifier,
-        shape = RoundedCornerShape(12.dp),
-        colors = CardDefaults.cardColors(
-            containerColor = MaterialTheme.colorScheme.surface.copy(alpha = 0.5f)
+    ElevatedCard(
+        modifier = modifier
+            .border(
+                width = 2.dp,
+                color = MaterialTheme.colorScheme.outline.copy(alpha = 0.4f),
+                shape = SudokuCustomShapes.ExpressiveSudokuBox
+            ),
+        shape = SudokuCustomShapes.ExpressiveSudokuBox,
+        colors = CardDefaults.elevatedCardColors(
+            containerColor = MaterialTheme.colorScheme.surfaceContainer.copy(alpha = 0.7f)
         ),
-        border = BorderStroke(2.dp, MaterialTheme.colorScheme.outline.copy(alpha = 0.3f))
+        elevation = CardDefaults.elevatedCardElevation(defaultElevation = 4.dp)
     ) {
         Column(
-            modifier = Modifier.padding(4.dp),
-            verticalArrangement = Arrangement.spacedBy(2.dp)
+            modifier = Modifier.padding(6.dp),
+            verticalArrangement = Arrangement.spacedBy(3.dp)
         ) {
             repeat(3) { innerRow ->
                 Row(
-                    horizontalArrangement = Arrangement.spacedBy(2.dp)
+                    horizontalArrangement = Arrangement.spacedBy(3.dp)
                 ) {
                     repeat(3) { innerCol ->
                         val row = boxRow * 3 + innerRow
@@ -213,7 +221,7 @@ fun SudokuCell(
         elevation = CardDefaults.elevatedCardElevation(
             defaultElevation = elevation
         ),
-        shape = RoundedCornerShape(8.dp)
+        shape = if (isSelected) SudokuCustomShapes.ExpressiveSudokuCell else SudokuCustomShapes.SudokuCell
     ) {
         Box(
             modifier = Modifier.fillMaxSize(),
@@ -228,11 +236,18 @@ fun SudokuCell(
             if (displayValue.isNotEmpty()) {
                 Text(
                     text = displayValue,
-                    fontSize = 16.sp,
-                    fontWeight = when {
-                        isOriginal -> FontWeight.Bold
-                        isHint -> FontWeight.Medium
-                        else -> FontWeight.SemiBold
+                    style = when {
+                        isOriginal -> SudokuTextStyles.SudokuNumber.copy(
+                            fontWeight = FontWeight.Bold,
+                            fontSize = 18.sp
+                        )
+                        isHint -> SudokuTextStyles.SudokuHint.copy(
+                            fontSize = 16.sp
+                        )
+                        else -> SudokuTextStyles.SudokuNumber.copy(
+                            fontWeight = FontWeight.SemiBold,
+                            fontSize = 17.sp
+                        )
                     },
                     color = textColor,
                     textAlign = TextAlign.Center

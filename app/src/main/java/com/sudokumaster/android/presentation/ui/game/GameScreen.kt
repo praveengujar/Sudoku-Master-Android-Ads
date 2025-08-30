@@ -3,7 +3,10 @@ package com.sudokumaster.android.presentation.ui.game
 import androidx.compose.animation.*
 import androidx.compose.animation.core.*
 import androidx.compose.foundation.background
+import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.WindowInsets
+import androidx.compose.foundation.layout.statusBarsPadding
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
@@ -22,12 +25,13 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.sudokumaster.android.presentation.theme.SudokuCustomShapes
+import com.sudokumaster.android.presentation.theme.PixelEnhancements
+import com.sudokumaster.android.presentation.theme.PixelMotion
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.sudokumaster.android.domain.model.SudokuDifficulty
-import com.sudokumaster.android.presentation.ui.game.components.SudokuBoard
-import com.sudokumaster.android.presentation.ui.game.components.NumberPad
-import com.sudokumaster.android.presentation.ui.game.components.VictoryDialog
+import com.sudokumaster.android.presentation.ui.game.components.*
 import com.sudokumaster.android.presentation.viewmodel.AuthViewModel
 import com.sudokumaster.android.presentation.viewmodel.SudokuGameViewModel
 import kotlinx.coroutines.launch
@@ -37,6 +41,7 @@ import kotlinx.coroutines.launch
 fun GameScreen(
     authViewModel: AuthViewModel,
     onNavigateToAuth: () -> Unit,
+    onNavigateToProfile: () -> Unit,
     sudokuViewModel: SudokuGameViewModel = hiltViewModel()
 ) {
     val scope = rememberCoroutineScope()
@@ -64,266 +69,116 @@ fun GameScreen(
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .background(
-                Brush.verticalGradient(
-                    colors = listOf(
-                        MaterialTheme.colorScheme.background,
-                        MaterialTheme.colorScheme.surfaceContainerLowest
-                    )
-                )
-            )
+            .background(MaterialTheme.colorScheme.background)
+            .statusBarsPadding()
+            .padding(16.dp)
     ) {
-        // Modern top app bar
-        CenterAlignedTopAppBar(
-            title = {
-                Column(
-                    horizontalAlignment = Alignment.CenterHorizontally
-                ) {
-                    Text(
-                        text = if (isGuestMode) "Guest Mode" else "Welcome back!",
-                        fontWeight = FontWeight.Bold,
-                        fontSize = 18.sp
-                    )
-                    currentUser?.let { user ->
-                        if (!isGuestMode) {
-                            Text(
-                                text = user.username,
-                                fontSize = 14.sp,
-                                color = MaterialTheme.colorScheme.onSurfaceVariant,
-                                fontWeight = FontWeight.Medium
-                            )
-                        }
+        // Sudoku Master branding at the top
+        Text(
+            text = "Sudoku Master",
+            style = MaterialTheme.typography.headlineMedium,
+            fontWeight = FontWeight.Bold,
+            color = MaterialTheme.colorScheme.onBackground,
+            textAlign = TextAlign.Center,
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(vertical = 8.dp)
+        )
+        
+        // Simple header with username and timer
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(vertical = 8.dp),
+            horizontalArrangement = Arrangement.SpaceBetween,
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            // Username with icon and offline badge
+            Row(
+                verticalAlignment = Alignment.CenterVertically,
+                horizontalArrangement = Arrangement.spacedBy(8.dp)
+            ) {
+                IconButton(
+                    onClick = {
+                        onNavigateToProfile()
                     }
-                    if (isOfflineMode) {
-                        Badge(
-                            modifier = Modifier.padding(top = 2.dp),
-                            containerColor = MaterialTheme.colorScheme.tertiaryContainer
-                        ) {
-                            Text(
-                                text = "Offline",
-                                fontSize = 10.sp,
-                                fontWeight = FontWeight.Medium
-                            )
-                        }
-                    }
-                }
-            },
-            actions = {
-                IconButton(onClick = { showMenu = true }) {
-                    Icon(Icons.Default.MoreVert, contentDescription = "Menu")
-                }
-                
-                DropdownMenu(
-                    expanded = showMenu,
-                    onDismissRequest = { showMenu = false }
                 ) {
-                    DropdownMenuItem(
-                        text = { Text("Profile") },
-                        onClick = { 
-                            showMenu = false 
-                            // TODO: Navigate to profile
-                        },
-                        leadingIcon = { Icon(Icons.Default.Person, contentDescription = null) }
+                    Icon(
+                        Icons.Default.Person,
+                        contentDescription = "Profile",
+                        tint = MaterialTheme.colorScheme.primary,
+                        modifier = Modifier.size(24.dp)
                     )
-                    DropdownMenuItem(
-                        text = { Text("Settings") },
-                        onClick = { 
-                            showMenu = false 
-                            // TODO: Navigate to settings
-                        },
-                        leadingIcon = { Icon(Icons.Default.Settings, contentDescription = null) }
-                    )
-                    HorizontalDivider()
-                    DropdownMenuItem(
-                        text = { Text("Sign Out") },
-                        onClick = { 
-                            showMenu = false
-                            scope.launch {
-                                authViewModel.logout()
-                                onNavigateToAuth()
-                            }
-                        },
-                        leadingIcon = { Icon(Icons.AutoMirrored.Default.ExitToApp, contentDescription = null) }
-                    )
+                }
+                Text(
+                    text = if (isGuestMode) "Guest" else (currentUser?.username ?: "Player"),
+                    style = MaterialTheme.typography.titleMedium,
+                    color = MaterialTheme.colorScheme.primary,
+                    fontWeight = FontWeight.Medium
+                )
+                if (isOfflineMode) {
+                    Badge(
+                        containerColor = MaterialTheme.colorScheme.tertiaryContainer,
+                        contentColor = MaterialTheme.colorScheme.onTertiaryContainer
+                    ) {
+                        Text(
+                            text = "Offline",
+                            fontSize = 10.sp,
+                            fontWeight = FontWeight.Medium
+                        )
+                    }
                 }
             }
-        )
+            
+            // Timer with icon
+            Row(
+                verticalAlignment = Alignment.CenterVertically,
+                horizontalArrangement = Arrangement.spacedBy(8.dp)
+            ) {
+                Icon(
+                    Icons.Default.AccessTime,
+                    contentDescription = null,
+                    tint = MaterialTheme.colorScheme.onSurface,
+                    modifier = Modifier.size(24.dp)
+                )
+                Text(
+                    text = formatTime(timeSpentSeconds),
+                    style = MaterialTheme.typography.titleMedium,
+                    color = MaterialTheme.colorScheme.onSurface,
+                    fontWeight = FontWeight.Medium
+                )
+            }
+        }
+        
+        Spacer(modifier = Modifier.height(16.dp))
 
-        // Scrollable content
+        // Main content area
         Column(
             modifier = Modifier
-                .fillMaxSize()
-                .verticalScroll(rememberScrollState())
-                .padding(16.dp),
-            verticalArrangement = Arrangement.spacedBy(20.dp)
+                .weight(1f),
+            verticalArrangement = Arrangement.spacedBy(16.dp)
         ) {
-            // Enhanced game info card
-            ElevatedCard(
-                modifier = Modifier.fillMaxWidth(),
-                elevation = CardDefaults.elevatedCardElevation(defaultElevation = 6.dp),
-                shape = RoundedCornerShape(16.dp),
-                colors = CardDefaults.elevatedCardColors(
-                    containerColor = MaterialTheme.colorScheme.surfaceContainer
-                )
-            ) {
-                Row(
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .padding(16.dp),
-                    horizontalArrangement = Arrangement.SpaceBetween,
-                    verticalAlignment = Alignment.CenterVertically
-                ) {
-                    // Difficulty selector with modern design
-                    Column {
-                        Text(
-                            text = "Difficulty",
-                            fontSize = 12.sp,
-                            fontWeight = FontWeight.Medium,
-                            color = MaterialTheme.colorScheme.onSurfaceVariant
-                        )
-                        
-                        var expanded by remember { mutableStateOf(false) }
-                        
-                        AssistChip(
-                            onClick = { expanded = true },
-                            label = {
-                                Text(
-                                    text = difficulty.displayName,
-                                    fontWeight = FontWeight.SemiBold
-                                )
-                            },
-                            trailingIcon = {
-                                Icon(
-                                    Icons.Default.ArrowDropDown,
-                                    contentDescription = null,
-                                    modifier = Modifier.size(18.dp)
-                                )
-                            },
-                            colors = AssistChipDefaults.assistChipColors(
-                                containerColor = difficulty.color.copy(alpha = 0.2f),
-                                labelColor = difficulty.color
-                            )
-                        )
-                        
-                        DropdownMenu(
-                            expanded = expanded,
-                            onDismissRequest = { expanded = false }
-                        ) {
-                            SudokuDifficulty.values().forEach { diff ->
-                                DropdownMenuItem(
-                                    text = {
-                                        Row(
-                                            verticalAlignment = Alignment.CenterVertically,
-                                            horizontalArrangement = Arrangement.spacedBy(8.dp)
-                                        ) {
-                                            Icon(
-                                                Icons.Default.Circle,
-                                                contentDescription = null,
-                                                modifier = Modifier.size(12.dp),
-                                                tint = diff.color
-                                            )
-                                            Text(diff.displayName)
-                                        }
-                                    },
-                                    onClick = {
-                                        expanded = false
-                                        sudokuViewModel.setDifficulty(diff)
-                                    }
-                                )
-                            }
-                        }
-                    }
 
-                    // Enhanced timer display
-                    Column(
-                        horizontalAlignment = Alignment.End
-                    ) {
-                        Text(
-                            text = "Time",
-                            fontSize = 12.sp,
-                            fontWeight = FontWeight.Medium,
-                            color = MaterialTheme.colorScheme.onSurfaceVariant
-                        )
-                        Surface(
-                            shape = RoundedCornerShape(12.dp),
-                            color = MaterialTheme.colorScheme.primaryContainer.copy(alpha = 0.7f)
-                        ) {
-                            Text(
-                                text = formatTime(timeSpentSeconds),
-                                fontSize = 20.sp,
-                                fontWeight = FontWeight.Bold,
-                                color = MaterialTheme.colorScheme.onPrimaryContainer,
-                                modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp)
-                            )
-                        }
-                    }
-                }
-            }
-
-            // Error message with modern styling
-            errorMessage?.let { error ->
-                AnimatedVisibility(
-                    visible = true,
-                    enter = slideInVertically() + fadeIn(),
-                    exit = slideOutVertically() + fadeOut()
-                ) {
-                    ElevatedCard(
-                        modifier = Modifier.fillMaxWidth(),
-                        colors = CardDefaults.elevatedCardColors(
-                            containerColor = MaterialTheme.colorScheme.errorContainer
-                        ),
-                        shape = RoundedCornerShape(16.dp)
-                    ) {
-                        Row(
-                            modifier = Modifier
-                                .fillMaxWidth()
-                                .padding(16.dp),
-                            verticalAlignment = Alignment.CenterVertically,
-                            horizontalArrangement = Arrangement.spacedBy(12.dp)
-                        ) {
-                            Icon(
-                                Icons.Default.Error,
-                                contentDescription = null,
-                                tint = MaterialTheme.colorScheme.onErrorContainer
-                            )
-                            Text(
-                                text = error,
-                                color = MaterialTheme.colorScheme.onErrorContainer,
-                                fontWeight = FontWeight.Medium,
-                                modifier = Modifier.weight(1f)
-                            )
-                        }
-                    }
-                }
-            }
-
-            // Loading indicator with modern design
+            // Loading indicator
             if (isLoading) {
-                ElevatedCard(
+                Box(
                     modifier = Modifier.fillMaxWidth(),
-                    shape = RoundedCornerShape(16.dp)
+                    contentAlignment = Alignment.Center
                 ) {
                     Column(
-                        modifier = Modifier
-                            .fillMaxWidth()
-                            .padding(32.dp),
                         horizontalAlignment = Alignment.CenterHorizontally,
                         verticalArrangement = Arrangement.spacedBy(16.dp)
                     ) {
-                        CircularProgressIndicator(
-                            modifier = Modifier.size(48.dp),
-                            strokeWidth = 4.dp
-                        )
+                        CircularProgressIndicator(modifier = Modifier.size(32.dp))
                         Text(
                             text = "Loading puzzle...",
-                            fontWeight = FontWeight.Medium,
-                            fontSize = 16.sp
+                            style = MaterialTheme.typography.bodyMedium
                         )
                     }
                 }
             } else {
-                // Modern Sudoku board
-                SudokuBoard(
+                // Clean Sudoku board matching reference design
+                SimpleSudokuBoard(
                     grid = grid,
                     originalGrid = originalGrid,
                     selectedCell = selectedCell,
@@ -335,72 +190,36 @@ fun GameScreen(
                                 null else com.sudokumaster.android.domain.model.CellPosition(row, col)
                         )
                     },
-                    modifier = Modifier.fillMaxWidth()
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .aspectRatio(1f)
                 )
-
-                // Enhanced Number pad
-                NumberPad(
+                
+                // Action icons row (like in reference)
+                ActionIconsRow(
+                    currentDifficulty = difficulty,
+                    onDifficultyChange = { newDifficulty ->
+                        sudokuViewModel.setDifficulty(newDifficulty)
+                    },
+                    onRedo = { sudokuViewModel.redo() },
+                    onHint = { sudokuViewModel.getHint() },
+                    onAutoSolve = { sudokuViewModel.autoSolve() }
+                )
+                
+                // Clean number pad - more compact
+                CleanNumberPad(
                     onNumberClick = { number ->
                         sudokuViewModel.enterNumber(number)
                     },
                     onEraseClick = {
                         sudokuViewModel.eraseNumber()
-                    },
-                    modifier = Modifier.fillMaxWidth()
+                    }
                 )
-
-                // Modern action buttons
-                Row(
-                    modifier = Modifier.fillMaxWidth(),
-                    horizontalArrangement = Arrangement.spacedBy(12.dp)
-                ) {
-                    FilledTonalButton(
-                        onClick = { sudokuViewModel.newGame() },
-                        modifier = Modifier.weight(1f),
-                        shape = RoundedCornerShape(16.dp)
-                    ) {
-                        Icon(
-                            Icons.Default.Refresh,
-                            contentDescription = null,
-                            modifier = Modifier.size(18.dp)
-                        )
-                        Spacer(modifier = Modifier.width(8.dp))
-                        Text("New Game", fontWeight = FontWeight.SemiBold)
-                    }
-
-                    OutlinedButton(
-                        onClick = { sudokuViewModel.getHint() },
-                        modifier = Modifier.weight(1f),
-                        shape = RoundedCornerShape(16.dp)
-                    ) {
-                        Icon(
-                            Icons.Default.Lightbulb,
-                            contentDescription = null,
-                            modifier = Modifier.size(18.dp)
-                        )
-                        Spacer(modifier = Modifier.width(8.dp))
-                        Text("Hint", fontWeight = FontWeight.SemiBold)
-                    }
-
-                    OutlinedButton(
-                        onClick = { sudokuViewModel.clearUserInputs() },
-                        modifier = Modifier.weight(1f),
-                        shape = RoundedCornerShape(16.dp),
-                        colors = ButtonDefaults.outlinedButtonColors(
-                            contentColor = MaterialTheme.colorScheme.error
-                        )
-                    ) {
-                        Icon(
-                            Icons.Default.Clear,
-                            contentDescription = null,
-                            modifier = Modifier.size(18.dp)
-                        )
-                        Spacer(modifier = Modifier.width(8.dp))
-                        Text("Clear", fontWeight = FontWeight.SemiBold)
-                    }
-                }
             }
         }
+        
+        // Banner Ad Placeholder
+        BannerAdPlaceholder()
     }
 
     // Victory dialog
@@ -414,6 +233,20 @@ fun GameScreen(
                 sudokuViewModel.newGame()
             }
         )
+    }
+}
+
+@Composable
+private fun BannerAdPlaceholder() {
+    Surface(
+        modifier = Modifier
+            .fillMaxWidth()
+            .height(60.dp)
+            .padding(horizontal = 8.dp, vertical = 4.dp),
+        color = MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.2f),
+        shape = RoundedCornerShape(8.dp)
+    ) {
+        // Empty space reserved for banner ad
     }
 }
 

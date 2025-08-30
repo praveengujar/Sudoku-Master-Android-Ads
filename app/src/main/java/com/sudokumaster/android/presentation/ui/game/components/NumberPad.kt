@@ -17,6 +17,8 @@ import androidx.compose.ui.platform.LocalHapticFeedback
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.sudokumaster.android.presentation.theme.SudokuCustomShapes
+import com.sudokumaster.android.presentation.theme.SudokuTextStyles
 
 @Composable
 fun NumberPad(
@@ -26,20 +28,20 @@ fun NumberPad(
 ) {
     ElevatedCard(
         modifier = modifier,
-        elevation = CardDefaults.elevatedCardElevation(defaultElevation = 8.dp),
-        shape = RoundedCornerShape(20.dp),
+        elevation = CardDefaults.elevatedCardElevation(defaultElevation = 12.dp),
+        shape = SudokuCustomShapes.ExpressiveNumberPad,
         colors = CardDefaults.elevatedCardColors(
-            containerColor = MaterialTheme.colorScheme.surfaceContainer
+            containerColor = MaterialTheme.colorScheme.surfaceContainerHigh
         )
     ) {
         Column(
-            modifier = Modifier.padding(20.dp),
-            verticalArrangement = Arrangement.spacedBy(12.dp)
+            modifier = Modifier.padding(24.dp),
+            verticalArrangement = Arrangement.spacedBy(14.dp)
         ) {
             // First row: 1, 2, 3, 4, 5
             Row(
                 modifier = Modifier.fillMaxWidth(),
-                horizontalArrangement = Arrangement.spacedBy(8.dp)
+                horizontalArrangement = Arrangement.spacedBy(12.dp)
             ) {
                 repeat(5) { index ->
                     NumberButton(
@@ -53,7 +55,7 @@ fun NumberPad(
             // Second row: 6, 7, 8, 9, Erase
             Row(
                 modifier = Modifier.fillMaxWidth(),
-                horizontalArrangement = Arrangement.spacedBy(8.dp)
+                horizontalArrangement = Arrangement.spacedBy(12.dp)
             ) {
                 repeat(4) { index ->
                     NumberButton(
@@ -97,7 +99,7 @@ private fun NumberButton(
         label = "button_color"
     )
     
-    FilledTonalButton(
+    Button(
         onClick = {
             haptic.performHapticFeedback(HapticFeedbackType.LongPress)
             onClick()
@@ -105,24 +107,20 @@ private fun NumberButton(
         modifier = modifier
             .aspectRatio(1f)
             .scale(scale),
-        shape = RoundedCornerShape(16.dp),
-        colors = ButtonDefaults.filledTonalButtonColors(
+        shape = SudokuCustomShapes.ExpressiveNumberButton,
+        colors = ButtonDefaults.buttonColors(
             containerColor = containerColor,
             contentColor = if (isPressed) 
                 MaterialTheme.colorScheme.onPrimary 
             else 
                 MaterialTheme.colorScheme.onPrimaryContainer
         ),
-        elevation = ButtonDefaults.filledTonalButtonElevation(
-            defaultElevation = 4.dp,
-            pressedElevation = 8.dp
-        ),
         contentPadding = PaddingValues(0.dp)
     ) {
         Text(
             text = number.toString(),
-            fontSize = 18.sp,
-            fontWeight = FontWeight.SemiBold
+            style = SudokuTextStyles.SudokuNumberLarge,
+            fontWeight = FontWeight.Bold
         )
     }
 }
@@ -158,7 +156,7 @@ private fun EraseButton(
         modifier = modifier
             .aspectRatio(1f)
             .scale(scale),
-        shape = RoundedCornerShape(16.dp),
+        shape = SudokuCustomShapes.ExpressiveNumberButton,
         colors = ButtonDefaults.outlinedButtonColors(
             containerColor = containerColor,
             contentColor = if (isPressed) 

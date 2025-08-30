@@ -1,0 +1,10 @@
+#Fri Aug 29 19:19:02 PDT 2025
+base.0=/Users/pgujar/Documents/Projects/Sudoku-Master-Android-Ads/app/build/intermediates/dex/release/mergeDexRelease/classes.dex
+base.1=/Users/pgujar/Documents/Projects/Sudoku-Master-Android-Ads/app/build/intermediates/dex/release/mergeDexRelease/classes2.dex
+base.2=/Users/pgujar/Documents/Projects/Sudoku-Master-Android-Ads/app/build/intermediates/dex/release/mergeDexRelease/classes3.dex
+path.0=classes.dex
+path.1=classes2.dex
+path.2=classes3.dex
+renamed.0=classes.dex
+renamed.1=classes2.dex
+renamed.2=classes3.dex

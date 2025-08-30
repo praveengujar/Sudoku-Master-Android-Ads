@@ -413,15 +413,15 @@ public final class DaggerSudokuApplication_HiltComponents_SingletonC {
 
     @IdentifierNameString
     private static final class LazyClassKeyProvider {
-      static String com_sudokumaster_android_presentation_viewmodel_SudokuGameViewModel = "com.sudokumaster.android.presentation.viewmodel.SudokuGameViewModel";
-
       static String com_sudokumaster_android_presentation_viewmodel_AuthViewModel = "com.sudokumaster.android.presentation.viewmodel.AuthViewModel";
 
-      @KeepFieldType
-      SudokuGameViewModel com_sudokumaster_android_presentation_viewmodel_SudokuGameViewModel2;
+      static String com_sudokumaster_android_presentation_viewmodel_SudokuGameViewModel = "com.sudokumaster.android.presentation.viewmodel.SudokuGameViewModel";
 
       @KeepFieldType
       AuthViewModel com_sudokumaster_android_presentation_viewmodel_AuthViewModel2;
+
+      @KeepFieldType
+      SudokuGameViewModel com_sudokumaster_android_presentation_viewmodel_SudokuGameViewModel2;
     }
   }
 
@@ -465,15 +465,15 @@ public final class DaggerSudokuApplication_HiltComponents_SingletonC {
 
     @IdentifierNameString
     private static final class LazyClassKeyProvider {
-      static String com_sudokumaster_android_presentation_viewmodel_AuthViewModel = "com.sudokumaster.android.presentation.viewmodel.AuthViewModel";
-
       static String com_sudokumaster_android_presentation_viewmodel_SudokuGameViewModel = "com.sudokumaster.android.presentation.viewmodel.SudokuGameViewModel";
 
-      @KeepFieldType
-      AuthViewModel com_sudokumaster_android_presentation_viewmodel_AuthViewModel2;
+      static String com_sudokumaster_android_presentation_viewmodel_AuthViewModel = "com.sudokumaster.android.presentation.viewmodel.AuthViewModel";
 
       @KeepFieldType
       SudokuGameViewModel com_sudokumaster_android_presentation_viewmodel_SudokuGameViewModel2;
+
+      @KeepFieldType
+      AuthViewModel com_sudokumaster_android_presentation_viewmodel_AuthViewModel2;
     }
 
     private static final class SwitchingProvider<T> implements Provider<T> {

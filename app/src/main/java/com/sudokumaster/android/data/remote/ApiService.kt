@@ -36,6 +36,12 @@ interface ApiService {
         @Header("Authorization") bearerToken: String
     ): Response<User>
     
+    @DELETE("users/{username}")
+    suspend fun deleteUser(
+        @Header("Authorization") bearerToken: String,
+        @Path("username") username: String
+    ): Response<Unit>
+    
     // Sudoku endpoints
     @GET("sudoku/generate")
     suspend fun generatePuzzle(

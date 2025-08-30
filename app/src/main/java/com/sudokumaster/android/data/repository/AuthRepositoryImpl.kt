@@ -229,4 +229,26 @@ class AuthRepositoryImpl @Inject constructor(
         
         println("✅ Updated JWT token biometric protection: $enabled")
     }
+
+    override suspend fun deleteUser(username: String): Boolean {
+        return withContext(Dispatchers.IO) {
+            try {
+                val token = getValidAccessToken()
+                    ?: throw Exception("No valid access token available")
+                
+                val response = apiService.deleteUser("Bearer $token", username)
+                
+                if (response.isSuccessful) {
+                    println("✅ User '$username' deleted successfully")
+                    true
+                } else {
+                    println("❌ Failed to delete user '$username': ${response.code()} ${response.message()}")
+                    false
+                }
+            } catch (error: Exception) {
+                println("❌ Error deleting user '$username': ${error.message}")
+                false
+            }
+        }
+    }
 }

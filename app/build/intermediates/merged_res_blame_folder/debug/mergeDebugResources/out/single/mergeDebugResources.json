@@ -1,5 +1,25 @@
 [
     {
+        "merged": "com.sudokumaster.android.app-debug-73:/drawable_ic_launcher_monochrome.xml.flat",
+        "source": "com.sudokumaster.android.app-main-75:/drawable/ic_launcher_monochrome.xml"
+    },
+    {
+        "merged": "com.sudokumaster.android.app-debug-73:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.sudokumaster.android.app-main-75:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/Users/pgujar/.gradle/daemon/9.0-milestone-1/com.sudokumaster.android.app-debug-73:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Users/pgujar/.gradle/daemon/9.0-milestone-1/com.sudokumaster.android.app-main-75:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.sudokumaster.android.app-debug-73:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.sudokumaster.android.app-main-75:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "/Users/pgujar/.gradle/daemon/9.0-milestone-1/com.sudokumaster.android.app-debug-73:/xml_data_extraction_rules.xml.flat",
+        "source": "/Users/pgujar/.gradle/daemon/9.0-milestone-1/com.sudokumaster.android.app-main-75:/xml/data_extraction_rules.xml"
+    },
+    {
         "merged": "com.sudokumaster.android.app-debug-73:/drawable_ic_launcher_foreground.xml.flat",
         "source": "com.sudokumaster.android.app-main-75:/drawable/ic_launcher_foreground.xml"
     },
@@ -8,27 +28,27 @@
         "source": "com.sudokumaster.android.app-main-75:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "com.sudokumaster.android.app-debug-73:/xml_backup_rules.xml.flat",
-        "source": "com.sudokumaster.android.app-main-75:/xml/backup_rules.xml"
+        "merged": "/Users/pgujar/.gradle/daemon/9.0-milestone-1/com.sudokumaster.android.app-debug-73:/drawable_ic_launcher_legacy.xml.flat",
+        "source": "/Users/pgujar/.gradle/daemon/9.0-milestone-1/com.sudokumaster.android.app-main-75:/drawable/ic_launcher_legacy.xml"
     },
     {
-        "merged": "com.sudokumaster.android.app-debug-73:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "com.sudokumaster.android.app-main-75:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "/Users/pgujar/.gradle/daemon/9.0-milestone-1/com.sudokumaster.android.app-debug-73:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "/Users/pgujar/.gradle/daemon/9.0-milestone-1/com.sudokumaster.android.app-main-75:/drawable/ic_launcher_foreground.xml"
     },
     {
-        "merged": "com.sudokumaster.android.app-debug-73:/drawable_ic_launcher_background.xml.flat",
-        "source": "com.sudokumaster.android.app-main-75:/drawable/ic_launcher_background.xml"
+        "merged": "/Users/pgujar/.gradle/daemon/9.0-milestone-1/com.sudokumaster.android.app-debug-73:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/Users/pgujar/.gradle/daemon/9.0-milestone-1/com.sudokumaster.android.app-main-75:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "com.sudokumaster.android.app-debug-73:/drawable_ic_launcher_legacy.xml.flat",
-        "source": "com.sudokumaster.android.app-main-75:/drawable/ic_launcher_legacy.xml"
+        "merged": "/Users/pgujar/.gradle/daemon/9.0-milestone-1/com.sudokumaster.android.app-debug-73:/xml_network_security_config.xml.flat",
+        "source": "/Users/pgujar/.gradle/daemon/9.0-milestone-1/com.sudokumaster.android.app-main-75:/xml/network_security_config.xml"
     },
     {
-        "merged": "com.sudokumaster.android.app-debug-73:/xml_network_security_config.xml.flat",
-        "source": "com.sudokumaster.android.app-main-75:/xml/network_security_config.xml"
+        "merged": "/Users/pgujar/.gradle/daemon/9.0-milestone-1/com.sudokumaster.android.app-debug-73:/drawable_ic_launcher_background.xml.flat",
+        "source": "/Users/pgujar/.gradle/daemon/9.0-milestone-1/com.sudokumaster.android.app-main-75:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "com.sudokumaster.android.app-debug-73:/xml_data_extraction_rules.xml.flat",
-        "source": "com.sudokumaster.android.app-main-75:/xml/data_extraction_rules.xml"
+        "merged": "/Users/pgujar/.gradle/daemon/9.0-milestone-1/com.sudokumaster.android.app-debug-73:/xml_backup_rules.xml.flat",
+        "source": "/Users/pgujar/.gradle/daemon/9.0-milestone-1/com.sudokumaster.android.app-main-75:/xml/backup_rules.xml"
     }
 ]
