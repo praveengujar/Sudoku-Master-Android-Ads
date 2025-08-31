@@ -1,11 +1,14 @@
 package com.sudokumaster.android.presentation.viewmodel
 
+import android.content.Context
 import androidx.fragment.app.FragmentActivity
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import dagger.hilt.android.qualifiers.ApplicationContext
 import com.sudokumaster.android.domain.repository.AuthRepository
 import com.sudokumaster.android.domain.model.User
 import com.sudokumaster.android.utils.NetworkMonitor
+import com.sudokumaster.android.utils.BiometricAuthManager
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.launch
@@ -13,8 +16,10 @@ import javax.inject.Inject
 
 @HiltViewModel
 class AuthViewModel @Inject constructor(
+    @ApplicationContext private val context: Context,
     private val authRepository: AuthRepository,
-    private val networkMonitor: NetworkMonitor
+    private val networkMonitor: NetworkMonitor,
+    private val biometricAuthManager: BiometricAuthManager
 ) : ViewModel() {
 
     private val _currentUser = MutableStateFlow<User?>(null)
@@ -34,9 +39,17 @@ class AuthViewModel @Inject constructor(
 
     private val _biometricEnabled = MutableStateFlow(false)
     val biometricEnabled = _biometricEnabled.asStateFlow()
+    
+    // Biometric convenience properties  
+    val isBiometricAvailable: Boolean
+        get() = authRepository.isBiometricAvailable()
+    
+    val biometricDisplayName: String
+        get() = biometricAuthManager.getBiometricDisplayName(context)
+    
+    val hasStoredCredentials: Boolean
+        get() = authRepository.hasStoredTokens()
 
-    private val _biometricType = MutableStateFlow<BiometricType>(BiometricType.NONE)
-    val biometricType = _biometricType.asStateFlow()
 
     // Prevent multiple simultaneous authentication attempts
     private var isAuthenticating = false
@@ -45,22 +58,8 @@ class AuthViewModel @Inject constructor(
     val isLoggedInOrGuest: Boolean
         get() = _isAuthenticated.value || _isGuestMode.value
 
-    val biometricDisplayName: String
-        get() = when (_biometricType.value) {
-            BiometricType.FACE -> "Face unlock"
-            BiometricType.FINGERPRINT -> "Fingerprint"
-            BiometricType.NONE -> "Biometric"
-        }
 
-    val isBiometricAvailable: Boolean
-        get() = authRepository.isBiometricAvailable()
 
-    val hasStoredCredentials: Boolean
-        get() = authRepository.hasStoredTokens()
-
-    enum class BiometricType {
-        NONE, FINGERPRINT, FACE
-    }
 
     init {
         setupBiometrics()
@@ -68,11 +67,6 @@ class AuthViewModel @Inject constructor(
     }
 
     private fun setupBiometrics() {
-        _biometricType.value = when {
-            authRepository.isBiometricAvailable() -> BiometricType.FINGERPRINT // Simplified for Android
-            else -> BiometricType.NONE
-        }
-        
         viewModelScope.launch {
             _biometricEnabled.value = authRepository.isBiometricEnabled()
         }

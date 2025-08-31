@@ -1,110 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:width="108dp"
     android:height="108dp"
     android:viewportWidth="108"
     android:viewportHeight="108">
     
-    <!-- Material You Floating Card Design -->
+    <!-- Light theme Sudoku grid with colorful numbers -->
     <group android:translateX="54" android:translateY="54">
-        <!-- Primary floating surface with sophisticated shadow -->
-        <path
-            android:pathData="M-36,-36 L36,-36 A20,20 0,0,1 56,-16 L56,16 A20,20 0,0,1 36,36 L-36,36 A20,20 0,0,1 -56,16 L-56,-16 A20,20 0,0,1 -36,-36 Z"
-            android:fillColor="#1976D2"
-            android:fillAlpha="0.95"/>
-        
-        <!-- Subtle gradient overlay -->
-        <path
-            android:pathData="M-36,-36 L36,-36 A20,20 0,0,1 56,-16 L56,16 A20,20 0,0,1 36,36 L-36,36 A20,20 0,0,1 -56,16 L-56,-16 A20,20 0,0,1 -36,-36 Z"
-            android:fillColor="@android:color/white"
-            android:fillAlpha="0.08"/>
-        
-        <!-- Inner content card -->
-        <path
-            android:pathData="M-32,-32 L32,-32 A16,16 0,0,1 48,-16 L48,16 A16,16 0,0,1 32,32 L-32,32 A16,16 0,0,1 -48,16 L-48,-16 A16,16 0,0,1 -32,-32 Z"
-            android:fillColor="@android:color/white"
-            android:fillAlpha="0.98"/>
-        
-        <!-- Modern 9x9 Sudoku Grid with Material Design -->
-        <group android:scaleX="0.75" android:scaleY="0.75">
-            <!-- Main grid structure with rounded intersections -->
+        <!-- 3x3 Grid lines - subtle gray for light theme -->
+        <group android:scaleX="0.8" android:scaleY="0.8">
+            <!-- Main grid borders -->
             <path
-                android:pathData="M-40,0 L40,0"
-                android:strokeWidth="3"
-                android:strokeColor="#1976D2"
-                android:strokeLineCap="round"/>
-            <path
-                android:pathData="M0,-40 L0,40"
-                android:strokeWidth="3"
-                android:strokeColor="#1976D2"
-                android:strokeLineCap="round"/>
+                android:pathData="M-30,-30 L30,-30 L30,30 L-30,30 Z"
+                android:strokeWidth="1.5"
+                android:strokeColor="#CCCCCC"
+                android:fillColor="#00FFFFFF"/>
             
-            <!-- Secondary grid lines -->
+            <!-- Vertical lines -->
             <path
-                android:pathData="M-40,-26.67 L40,-26.67 M-40,26.67 L40,26.67"
-                android:strokeWidth="2"
-                android:strokeColor="#1976D2"
-                android:strokeAlpha="0.6"/>
-            <path
-                android:pathData="M-26.67,-40 L-26.67,40 M26.67,-40 L26.67,40"
-                android:strokeWidth="2"
-                android:strokeColor="#1976D2"
-                android:strokeAlpha="0.6"/>
+                android:pathData="M-10,-30 L-10,30 M10,-30 L10,30"
+                android:strokeWidth="1"
+                android:strokeColor="#DDDDDD"/>
             
-            <!-- Fine grid lines -->
+            <!-- Horizontal lines -->
             <path
-                android:pathData="M-40,-13.33 L40,-13.33 M-40,13.33 L40,13.33"
+                android:pathData="M-30,-10 L30,-10 M-30,10 L30,10"
                 android:strokeWidth="1"
-                android:strokeColor="#1976D2"
-                android:strokeAlpha="0.3"/>
-            <path
-                android:pathData="M-13.33,-40 L-13.33,40 M13.33,-40 L13.33,40"
-                android:strokeWidth="1"
-                android:strokeColor="#1976D2"
-                android:strokeAlpha="0.3"/>
+                android:strokeColor="#DDDDDD"/>
         </group>
         
-        <!-- Material You Number Tokens -->
-        <group>
-            <!-- Primary number token -->
-            <path
-                android:pathData="M-20,-20 A8,8 0,1,1 -20,-4 A8,8 0,1,1 -20,-20"
-                android:fillColor="#4CAF50"/>
-            <!-- Secondary number token -->
-            <path
-                android:pathData="M20,-8 A6,6 0,1,1 20,4 A6,6 0,1,1 20,-8"
-                android:fillColor="#FF9800"/>
-            <!-- Accent number token -->
-            <path
-                android:pathData="M-8,20 A5,5 0,1,1 -8,30 A5,5 0,1,1 -8,20"
-                android:fillColor="#E91E63"/>
-            <!-- Highlight token -->
-            <path
-                android:pathData="M12,12 A4,4 0,1,1 12,20 A4,4 0,1,1 12,12"
-                android:fillColor="#9C27B0"/>
+        <!-- Colorful Number representations as shapes/paths -->
+        <group android:scaleX="0.6" android:scaleY="0.6">
+            <!-- Row 1: 5 (orange circle), 3 (cyan triangle), 4 (blue square) -->
+            <path android:pathData="M-20,-12 A5,5 0,1,1 -20,-11.9 Z" android:fillColor="#FF8C42"/>
+            <path android:pathData="M-4,-20 L4,-8 L-12,-8 Z" android:fillColor="#4ECDC4"/>
+            <path android:pathData="M16,-20 L24,-20 L24,-4 L16,-4 Z" android:fillColor="#45B7D1"/>
+            
+            <!-- Row 2: 6 (green hexagon), 7 (yellow triangle), 2 (pink oval) -->
+            <path android:pathData="M-24,0 L-16,-6 L-16,6 L-24,12 L-32,6 L-32,-6 Z" android:fillColor="#96CEB4"/>
+            <path android:pathData="M-4,0 L8,-6 L8,12 Z" android:fillColor="#FECA57"/>
+            <path android:pathData="M16,0 A6,8 0,1,1 16,0.1 Z" android:fillColor="#FF6B9D"/>
+            
+            <!-- Row 3: 1 (teal line), 8 (purple double circle), 9 (brown square) -->
+            <path android:pathData="M-22,16 L-18,28" android:strokeWidth="3" android:strokeColor="#95E1D3"/>
+            <path android:pathData="M-2,22 A3,3 0,1,1 -2,21.9 Z" android:fillColor="#C44569"/>
+            <path android:pathData="M2,22 A3,3 0,1,1 2,21.9 Z" android:fillColor="#C44569"/>
+            <path android:pathData="M16,16 L24,16 L24,28 L16,28 Z" android:fillColor="#F8B500"/>
         </group>
-        
-        <!-- Modern accent highlight -->
-        <path
-            android:pathData="M-32,-32 L32,-32 A16,16 0,0,1 48,-16 L48,-20 A12,12 0,0,0 36,-32 L-32,-32 Z"
-            android:fillColor="#1976D2"
-            android:fillAlpha="0.12"/>
-        
-        <!-- Floating action emphasis -->
-        <path
-            android:pathData="M0,-48 A2,2 0,1,1 0,-44 A2,2 0,1,1 0,-48"
-            android:fillColor="#1976D2"
-            android:fillAlpha="0.8"/>
-        <path
-            android:pathData="M0,44 A2,2 0,1,1 0,48 A2,2 0,1,1 0,44"
-            android:fillColor="#1976D2"
-            android:fillAlpha="0.8"/>
-        <path
-            android:pathData="M-48,0 A2,2 0,1,1 -44,0 A2,2 0,1,1 -48,0"
-            android:fillColor="#1976D2"
-            android:fillAlpha="0.8"/>
-        <path
-            android:pathData="M44,0 A2,2 0,1,1 48,0 A2,2 0,1,1 44,0"
-            android:fillColor="#1976D2"
-            android:fillAlpha="0.8"/>
     </group>
 </vector>

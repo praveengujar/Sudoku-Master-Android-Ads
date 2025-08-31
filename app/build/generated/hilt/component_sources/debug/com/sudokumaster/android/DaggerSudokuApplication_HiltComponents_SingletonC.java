@@ -28,6 +28,7 @@ import com.sudokumaster.android.presentation.viewmodel.AuthViewModel;
 import com.sudokumaster.android.presentation.viewmodel.AuthViewModel_HiltModules;
 import com.sudokumaster.android.presentation.viewmodel.SudokuGameViewModel;
 import com.sudokumaster.android.presentation.viewmodel.SudokuGameViewModel_HiltModules;
+import com.sudokumaster.android.utils.BiometricAuthManager;
 import com.sudokumaster.android.utils.NetworkMonitor;
 import com.sudokumaster.android.utils.PerformanceMonitor;
 import dagger.hilt.android.ActivityRetainedLifecycle;
@@ -465,15 +466,15 @@ public final class DaggerSudokuApplication_HiltComponents_SingletonC {
 
     @IdentifierNameString
     private static final class LazyClassKeyProvider {
-      static String com_sudokumaster_android_presentation_viewmodel_SudokuGameViewModel = "com.sudokumaster.android.presentation.viewmodel.SudokuGameViewModel";
-
       static String com_sudokumaster_android_presentation_viewmodel_AuthViewModel = "com.sudokumaster.android.presentation.viewmodel.AuthViewModel";
 
-      @KeepFieldType
-      SudokuGameViewModel com_sudokumaster_android_presentation_viewmodel_SudokuGameViewModel2;
+      static String com_sudokumaster_android_presentation_viewmodel_SudokuGameViewModel = "com.sudokumaster.android.presentation.viewmodel.SudokuGameViewModel";
 
       @KeepFieldType
       AuthViewModel com_sudokumaster_android_presentation_viewmodel_AuthViewModel2;
+
+      @KeepFieldType
+      SudokuGameViewModel com_sudokumaster_android_presentation_viewmodel_SudokuGameViewModel2;
     }
 
     private static final class SwitchingProvider<T> implements Provider<T> {
@@ -498,7 +499,7 @@ public final class DaggerSudokuApplication_HiltComponents_SingletonC {
       public T get() {
         switch (id) {
           case 0: // com.sudokumaster.android.presentation.viewmodel.AuthViewModel 
-          return (T) new AuthViewModel(singletonCImpl.provideAuthRepositoryProvider.get(), singletonCImpl.provideNetworkMonitorProvider.get());
+          return (T) new AuthViewModel(ApplicationContextModule_ProvideContextFactory.provideContext(singletonCImpl.applicationContextModule), singletonCImpl.provideAuthRepositoryProvider.get(), singletonCImpl.provideNetworkMonitorProvider.get(), singletonCImpl.biometricAuthManagerProvider.get());
 
           case 1: // com.sudokumaster.android.presentation.viewmodel.SudokuGameViewModel 
           return (T) new SudokuGameViewModel(singletonCImpl.provideSudokuRepositoryProvider.get(), singletonCImpl.provideAuthRepositoryProvider.get(), singletonCImpl.provideNetworkMonitorProvider.get(), singletonCImpl.providePerformanceMonitorProvider.get());
@@ -583,6 +584,8 @@ public final class DaggerSudokuApplication_HiltComponents_SingletonC {
 
     private final SingletonCImpl singletonCImpl = this;
 
+    private Provider<BiometricAuthManager> biometricAuthManagerProvider;
+
     private Provider<AuthTokenStorage> provideAuthTokenStorageProvider;
 
     private Provider<Interceptor> provideAuthInterceptorProvider;
@@ -613,17 +616,18 @@ public final class DaggerSudokuApplication_HiltComponents_SingletonC {
 
     @SuppressWarnings("unchecked")
     private void initialize(final ApplicationContextModule applicationContextModuleParam) {
+      this.biometricAuthManagerProvider = DoubleCheck.provider(new SwitchingProvider<BiometricAuthManager>(singletonCImpl, 6));
       this.provideAuthTokenStorageProvider = DoubleCheck.provider(new SwitchingProvider<AuthTokenStorage>(singletonCImpl, 5));
       this.provideAuthInterceptorProvider = DoubleCheck.provider(new SwitchingProvider<Interceptor>(singletonCImpl, 4));
       this.provideOkHttpClientProvider = DoubleCheck.provider(new SwitchingProvider<OkHttpClient>(singletonCImpl, 3));
-      this.provideGsonProvider = DoubleCheck.provider(new SwitchingProvider<Gson>(singletonCImpl, 6));
+      this.provideGsonProvider = DoubleCheck.provider(new SwitchingProvider<Gson>(singletonCImpl, 7));
       this.provideRetrofitProvider = DoubleCheck.provider(new SwitchingProvider<Retrofit>(singletonCImpl, 2));
       this.provideApiServiceProvider = DoubleCheck.provider(new SwitchingProvider<ApiService>(singletonCImpl, 1));
       this.provideAuthRepositoryProvider = DoubleCheck.provider(new SwitchingProvider<AuthRepository>(singletonCImpl, 0));
-      this.provideNetworkMonitorProvider = DoubleCheck.provider(new SwitchingProvider<NetworkMonitor>(singletonCImpl, 7));
-      this.provideSudokuDatabaseProvider = DoubleCheck.provider(new SwitchingProvider<SudokuDatabase>(singletonCImpl, 9));
-      this.provideSudokuRepositoryProvider = DoubleCheck.provider(new SwitchingProvider<SudokuRepository>(singletonCImpl, 8));
-      this.providePerformanceMonitorProvider = DoubleCheck.provider(new SwitchingProvider<PerformanceMonitor>(singletonCImpl, 10));
+      this.provideNetworkMonitorProvider = DoubleCheck.provider(new SwitchingProvider<NetworkMonitor>(singletonCImpl, 8));
+      this.provideSudokuDatabaseProvider = DoubleCheck.provider(new SwitchingProvider<SudokuDatabase>(singletonCImpl, 10));
+      this.provideSudokuRepositoryProvider = DoubleCheck.provider(new SwitchingProvider<SudokuRepository>(singletonCImpl, 9));
+      this.providePerformanceMonitorProvider = DoubleCheck.provider(new SwitchingProvider<PerformanceMonitor>(singletonCImpl, 11));
     }
 
     @Override
@@ -675,21 +679,24 @@ public final class DaggerSudokuApplication_HiltComponents_SingletonC {
           return (T) AppModule_ProvideAuthInterceptorFactory.provideAuthInterceptor(singletonCImpl.provideAuthTokenStorageProvider.get());
 
           case 5: // com.sudokumaster.android.data.local.AuthTokenStorage 
-          return (T) AppModule_ProvideAuthTokenStorageFactory.provideAuthTokenStorage(ApplicationContextModule_ProvideContextFactory.provideContext(singletonCImpl.applicationContextModule));
+          return (T) AppModule_ProvideAuthTokenStorageFactory.provideAuthTokenStorage(ApplicationContextModule_ProvideContextFactory.provideContext(singletonCImpl.applicationContextModule), singletonCImpl.biometricAuthManagerProvider.get());
 
-          case 6: // com.google.gson.Gson 
+          case 6: // com.sudokumaster.android.utils.BiometricAuthManager 
+          return (T) new BiometricAuthManager();
+
+          case 7: // com.google.gson.Gson 
           return (T) AppModule_ProvideGsonFactory.provideGson();
 
-          case 7: // com.sudokumaster.android.utils.NetworkMonitor 
+          case 8: // com.sudokumaster.android.utils.NetworkMonitor 
           return (T) AppModule_ProvideNetworkMonitorFactory.provideNetworkMonitor(ApplicationContextModule_ProvideContextFactory.provideContext(singletonCImpl.applicationContextModule));
 
-          case 8: // com.sudokumaster.android.domain.repository.SudokuRepository 
+          case 9: // com.sudokumaster.android.domain.repository.SudokuRepository 
           return (T) AppModule_ProvideSudokuRepositoryFactory.provideSudokuRepository(singletonCImpl.provideApiServiceProvider.get(), singletonCImpl.provideSudokuDatabaseProvider.get(), singletonCImpl.provideAuthRepositoryProvider.get());
 
-          case 9: // com.sudokumaster.android.data.local.SudokuDatabase 
+          case 10: // com.sudokumaster.android.data.local.SudokuDatabase 
           return (T) AppModule_ProvideSudokuDatabaseFactory.provideSudokuDatabase(ApplicationContextModule_ProvideContextFactory.provideContext(singletonCImpl.applicationContextModule));
 
-          case 10: // com.sudokumaster.android.utils.PerformanceMonitor 
+          case 11: // com.sudokumaster.android.utils.PerformanceMonitor 
           return (T) AppModule_ProvidePerformanceMonitorFactory.providePerformanceMonitor(ApplicationContextModule_ProvideContextFactory.provideContext(singletonCImpl.applicationContextModule));
 
           default: throw new AssertionError(id);

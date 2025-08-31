@@ -43,15 +43,6 @@ fun SudokuMasterApp() {
     val navController = rememberNavController()
     val authViewModel: AuthViewModel = hiltViewModel()
     
-    // Development utility: Delete pgujar user on startup
-    LaunchedEffect(Unit) {
-        try {
-            authViewModel.deleteUser("pgujar")
-        } catch (e: Exception) {
-            println("Note: Could not delete pgujar user (this is expected if user doesn't exist or no network): ${e.message}")
-        }
-    }
-    
     Surface(
         modifier = Modifier.fillMaxSize(),
         color = MaterialTheme.colorScheme.background

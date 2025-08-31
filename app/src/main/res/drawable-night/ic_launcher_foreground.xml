@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    
+    <!-- Dark theme Sudoku grid with bright colorful numbers -->
+    <group android:translateX="54" android:translateY="54">
+        <!-- 3x3 Grid lines - bright cyan for dark theme -->
+        <group android:scaleX="0.8" android:scaleY="0.8">
+            <!-- Main grid borders -->
+            <path
+                android:pathData="M-30,-30 L30,-30 L30,30 L-30,30 Z"
+                android:strokeWidth="2"
+                android:strokeColor="#00D4FF"
+                android:fillColor="#00FFFFFF"/>
+            
+            <!-- Vertical lines -->
+            <path
+                android:pathData="M-10,-30 L-10,30 M10,-30 L10,30"
+                android:strokeWidth="1.2"
+                android:strokeColor="#4A90E2"/>
+            
+            <!-- Horizontal lines -->
+            <path
+                android:pathData="M-30,-10 L30,-10 M-30,10 L30,10"
+                android:strokeWidth="1.2"
+                android:strokeColor="#4A90E2"/>
+        </group>
+        
+        <!-- Bright Colorful Number representations as shapes/paths -->
+        <group android:scaleX="0.6" android:scaleY="0.6">
+            <!-- Row 1: 5 (bright orange circle), 3 (bright cyan triangle), 4 (bright blue square) -->
+            <path android:pathData="M-20,-12 A5,5 0,1,1 -20,-11.9 Z" android:fillColor="#FF9F43"/>
+            <path android:pathData="M-4,-20 L4,-8 L-12,-8 Z" android:fillColor="#00FFD4"/>
+            <path android:pathData="M16,-20 L24,-20 L24,-4 L16,-4 Z" android:fillColor="#00D4FF"/>
+            
+            <!-- Row 2: 6 (bright green hexagon), 7 (bright yellow triangle), 2 (bright pink oval) -->
+            <path android:pathData="M-24,0 L-16,-6 L-16,6 L-24,12 L-32,6 L-32,-6 Z" android:fillColor="#00FF88"/>
+            <path android:pathData="M-4,0 L8,-6 L8,12 Z" android:fillColor="#FFE135"/>
+            <path android:pathData="M16,0 A6,8 0,1,1 16,0.1 Z" android:fillColor="#FF6B9D"/>
+            
+            <!-- Row 3: 1 (bright teal line), 8 (bright purple double circle), 9 (bright orange square) -->
+            <path android:pathData="M-22,16 L-18,28" android:strokeWidth="4" android:strokeColor="#00FFD4" android:strokeLineCap="round"/>
+            <path android:pathData="M-2,22 A3,3 0,1,1 -2,21.9 Z" android:fillColor="#9B59B6"/>
+            <path android:pathData="M2,22 A3,3 0,1,1 2,21.9 Z" android:fillColor="#9B59B6"/>
+            <path android:pathData="M16,16 L24,16 L24,28 L16,28 Z" android:fillColor="#00FF88"/>
+        </group>
+        
+        <!-- Glow effects for dark theme -->
+        <group android:scaleX="0.6" android:scaleY="0.6" android:alpha="0.3">
+            <!-- Subtle glow around shapes -->
+            <path android:pathData="M-20,-12 A7,7 0,1,1 -20,-11.9 Z" android:fillColor="#FF9F43"/>
+            <path android:pathData="M-2,22 A5,5 0,1,1 -2,21.9 Z" android:fillColor="#9B59B6"/>
+            <path android:pathData="M2,22 A5,5 0,1,1 2,21.9 Z" android:fillColor="#9B59B6"/>
+        </group>
+    </group>
+</vector>

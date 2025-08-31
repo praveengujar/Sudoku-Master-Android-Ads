@@ -9,11 +9,14 @@ import androidx.datastore.preferences.core.booleanPreferencesKey
 import androidx.datastore.preferences.preferencesDataStore
 import androidx.biometric.BiometricPrompt
 import androidx.fragment.app.FragmentActivity
+import com.sudokumaster.android.utils.BiometricAuthManager
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.map
+import kotlinx.coroutines.suspendCancellableCoroutine
 import javax.inject.Inject
 import javax.inject.Singleton
+import kotlin.coroutines.resume
 import java.util.*
 import javax.crypto.Cipher
 import javax.crypto.KeyGenerator
@@ -27,7 +30,8 @@ private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(na
 
 @Singleton
 class AuthTokenStorage @Inject constructor(
-    private val context: Context
+    private val context: Context,
+    private val biometricAuthManager: BiometricAuthManager
 ) {
     
     companion object {
@@ -196,9 +200,7 @@ class AuthTokenStorage @Inject constructor(
     }
 
     fun isBiometricAvailable(): Boolean {
-        return androidx.biometric.BiometricManager.from(context)
-            .canAuthenticate(androidx.biometric.BiometricManager.Authenticators.BIOMETRIC_WEAK) == 
-            androidx.biometric.BiometricManager.BIOMETRIC_SUCCESS
+        return biometricAuthManager.isBiometricAvailable(context)
     }
 
     private fun calculateExpiryDate(expiresIn: String): Date {
@@ -263,34 +265,29 @@ class AuthTokenStorage @Inject constructor(
     }
 
     private suspend fun authenticateWithBiometric(activity: FragmentActivity): Boolean {
-        return kotlin.runCatching {
-            val biometricPrompt = BiometricPrompt(activity, 
-                androidx.core.content.ContextCompat.getMainExecutor(context),
-                object : BiometricPrompt.AuthenticationCallback() {
-                    override fun onAuthenticationSucceeded(result: BiometricPrompt.AuthenticationResult) {
-                        super.onAuthenticationSucceeded(result)
+        return suspendCancellableCoroutine { continuation ->
+            biometricAuthManager.authenticate(
+                activity = activity,
+                title = "Authenticate to access Sudoku Master",
+                subtitle = "Use your biometric credential to sign in",
+                onSuccess = {
+                    if (continuation.isActive) {
+                        continuation.resume(true)
                     }
-
-                    override fun onAuthenticationError(errorCode: Int, errString: CharSequence) {
-                        super.onAuthenticationError(errorCode, errString)
+                },
+                onError = { error ->
+                    println("❌ Biometric authentication error: $error")
+                    if (continuation.isActive) {
+                        continuation.resume(false)
                     }
-
-                    override fun onAuthenticationFailed() {
-                        super.onAuthenticationFailed()
+                },
+                onCancel = {
+                    println("⚠️ Biometric authentication cancelled by user")
+                    if (continuation.isActive) {
+                        continuation.resume(false)
                     }
                 }
             )
-
-            val promptInfo = BiometricPrompt.PromptInfo.Builder()
-                .setTitle("Authenticate to access Sudoku Master")
-                .setSubtitle("Use your biometric credential to sign in")
-                .setNegativeButtonText("Cancel")
-                .build()
-
-            // This is a simplified version - in a real implementation,
-            // you'd need to handle the callback properly with coroutines
-            biometricPrompt.authenticate(promptInfo)
-            true
-        }.getOrElse { false }
+        }
     }
 }

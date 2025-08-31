@@ -183,11 +183,11 @@ MERGED from [com.google.android.gms:play-services-basement:11.0.4] /Users/pgujar
 	android:fullBackupContent
 		ADDED from /Users/pgujar/Documents/Projects/Sudoku-Master-Android-Ads/app/src/main/AndroidManifest.xml:21:9-54
 	android:roundIcon
-		ADDED from /Users/pgujar/Documents/Projects/Sudoku-Master-Android-Ads/app/src/main/AndroidManifest.xml:24:9-57
+		ADDED from /Users/pgujar/Documents/Projects/Sudoku-Master-Android-Ads/app/src/main/AndroidManifest.xml:24:9-54
 	tools:targetApi
 		ADDED from /Users/pgujar/Documents/Projects/Sudoku-Master-Android-Ads/app/src/main/AndroidManifest.xml:28:9-29
 	android:icon
-		ADDED from /Users/pgujar/Documents/Projects/Sudoku-Master-Android-Ads/app/src/main/AndroidManifest.xml:22:9-52
+		ADDED from /Users/pgujar/Documents/Projects/Sudoku-Master-Android-Ads/app/src/main/AndroidManifest.xml:22:9-43
 	android:allowBackup
 		ADDED from /Users/pgujar/Documents/Projects/Sudoku-Master-Android-Ads/app/src/main/AndroidManifest.xml:19:9-35
 	android:theme

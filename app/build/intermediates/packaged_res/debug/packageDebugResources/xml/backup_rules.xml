@@ -4,6 +4,5 @@
     <include domain="database" path="sudoku_database" />
     <include domain="sharedpref" path="game_settings.xml" />
     <!-- Exclude sensitive authentication data from backup -->
-    <exclude domain="database" path="auth_tokens.db" />
     <exclude domain="sharedpref" path="auth_prefs.xml" />
 </full-backup-content>

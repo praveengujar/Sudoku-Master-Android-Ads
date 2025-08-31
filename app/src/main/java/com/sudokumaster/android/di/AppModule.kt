@@ -12,6 +12,7 @@ import com.sudokumaster.android.data.repository.SudokuRepositoryImpl
 import com.sudokumaster.android.domain.repository.AuthRepository
 import com.sudokumaster.android.domain.repository.SudokuRepository
 import com.sudokumaster.android.utils.AdManagerStub
+import com.sudokumaster.android.utils.BiometricAuthManager
 import com.sudokumaster.android.utils.NetworkMonitor
 import com.sudokumaster.android.utils.PerformanceMonitor
 import dagger.Module
@@ -41,8 +42,11 @@ object AppModule {
 
     @Provides
     @Singleton
-    fun provideAuthTokenStorage(@ApplicationContext context: Context): AuthTokenStorage {
-        return AuthTokenStorage(context)
+    fun provideAuthTokenStorage(
+        @ApplicationContext context: Context, 
+        biometricAuthManager: BiometricAuthManager
+    ): AuthTokenStorage {
+        return AuthTokenStorage(context, biometricAuthManager)
     }
 
     @Provides
